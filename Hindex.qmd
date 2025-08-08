@@ -22,8 +22,12 @@ about:
     - icon: telegram
       href: https://t.me/programandoinr
       
+      
     - text: Email
       href: mailto:freddyvillabonac@gmail.com
+      
+    - text: linKedin
+      href: https://www.linkedin.com/in/freddvillabona/
   
 
       
