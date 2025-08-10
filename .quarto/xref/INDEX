@@ -142,5 +142,35 @@
   },
   "Hindex.qmd": {
     "Hindex.html": "9dd206bf"
+  },
+  "fv/posts/coffee/index.qmd": {
+    "index.html": "d4069f01"
+  },
+  "fv/posts/copenhague/index.qmd": {
+    "index.html": "d6f1e80b"
+  },
+  "fv/posts/d/index.qmd": {
+    "index.html": "910c0c7c"
+  },
+  "fv/posts/emissions/index.qmd": {
+    "index.html": "5b67b2d0"
+  },
+  "fv/posts/enfermedades/index.qmd": {
+    "index.html": "3770c022"
+  },
+  "fv/posts/map_UK/index.qmd": {
+    "index.html": "fd6cd759"
+  },
+  "fv/posts/map_china/index.qmd": {
+    "index.html": "41e1cc1d"
+  },
+  "fv/posts/notes_ggplot2/index.qmd": {
+    "index.html": "5e8c09b7"
+  },
+  "fv/posts/tormentas/index.qmd": {
+    "index.html": "1d284bc6"
+  },
+  "fv/posts/webScraping/index.qmd": {
+    "index.html": "463e52c2"
   }
 }
