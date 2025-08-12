@@ -1,0 +1,17 @@
+{
+  "hash": "a990e8a769865e23cc353adb28152006",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\nexecute:\n  message: false\n  warning: false\n  fig-show: no\ntitle: \"Gráfico de barras con ggplot2\"\nauthor: \"FV\"\ndate: \"2024-09-22\"\ncategories: [code, analysis]\nimage: \"ef.jpg\"\n---\n\n\n\n\n\nEsta vez se tiene un gráfico de barras \"ggplot2\" con paleta de colores manual. \n\nSe muestran las categorías por edad de un grupo de enfermedades preexistentes. Además se posiciona la leyenda en la parte superior izquierda. Se usa una paleta de colores personalizada\n\n\n\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(\"showtext\")\nlibrary(\"dplyr\")\nlibrary(\"ggplot2\")\n\n# FONTS\nfont_add_google(\"Luckiest Guy\",\"ramp\")\nfont_add_google(\"Bebas Neue\",\"beb\")\nfont_add_google(\"Fira Sans\",\"fira\")\nfont_add_google(\"Raleway\",\"ral\")\nfont_add_google(\"Bitter\",\"bit\")\nshowtext_auto()\n\ndata <- read.csv(\"data.csv\")\n\nggplot(data,\n       aes(x = Cond_pre, y = Freq, fill = Cond_pre)) +\n  geom_col(width = 1.4, just = 0.5) +\n  \n  facet_grid(~factor(Age, levels=c(\"0-4\", \"5-17\", \"18-49\", \"50-64\", \"65+\")),\n             space = \"free_x\", scales = \"free_x\", switch = \"x\")+\n  \n  scale_x_discrete(name = \"Edad\", expand = c(0, 1)) +\n  ylab(\"Porcentaje de condición preexistente\\n\") +\n  scale_fill_manual(values = c(\"#d53e4f\", \"#f46d43\", \"#fdae61\", \"#fee08b\",\n                               \"#abdda4\", \"#66c2a5\", \"#3288bd\", \"#9970ab\")) +\n  labs(title=\"\\nPorcentaje de condición preexistente\", \n       subtitle = \"\",\n       caption = \"Datos: Anónimo (2023)\\n\",\n       fill= \"Condición preexistente\") +\n\ntheme(strip.background = element_rect(\n    color=\"white\", fill=\"gray90\", linetype=\"solid\"), \n  strip.text.x = element_text(size=14, family = \"fira\"), \n  \n  axis.text.x = element_blank(), \n      axis.ticks.x = element_blank(),\n      panel.grid.major.x = element_blank(),\n      panel.background = element_rect(fill = \"white\", colour = \"white\"),\n  legend.position = c(.32, .65),\n  \n  \n  panel.grid.major = element_line(linewidth = 0.1, linetype = 'solid',\n                                  colour = \"white\"), \n  panel.grid.minor = element_line(linewidth = 0.1, linetype = 'solid',\n                                  colour = \"white\"),\n  \n  legend.text = element_text(size=13, family = \"bit\"), \n  legend.title = element_text(size=16, family = \"fira\"),\n  \n  axis.title.x=element_text(size=20, family = \"bit\"),\n  axis.title.y=element_text(size=20, family = \"bit\"),\n  plot.title=element_text(size=33, family = \"fira\", color = \"#190706\"),\n  axis.text.y  = element_text(color = \"#190706\", size=14, family = \"fira\"),\n)\n```\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

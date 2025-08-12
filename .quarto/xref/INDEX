@@ -142,5 +142,74 @@
   },
   "Hindex.qmd": {
     "Hindex.html": "9dd206bf"
+  },
+  "fv/Hindex.qmd": {
+    "Hindex.html": "4a9cfe9a"
+  },
+  "fv/av.qmd": {
+    "av.html": "6340f8b8"
+  },
+  "fv/ca.qmd": {
+    "ca.html": "bfd0ebeb"
+  },
+  "fv/ca/d/index.qmd": {
+    "index.html": "c82313ba"
+  },
+  "fv/intrusionsystems.qmd": {
+    "intrusionsystems.html": "d0d435f1"
+  },
+  "fv/notas/n1/index.qmd": {
+    "index.html": "9613a2d6"
+  },
+  "fv/notas/roma/index.qmd": {
+    "index.html": "13e9c463"
+  },
+  "fv/notes.qmd": {
+    "notes.html": "dd68c836"
+  },
+  "fv/notes/d/index.qmd": {
+    "index.html": "98d13739"
+  },
+  "fv/intrusionSystems/risco/index.qmd": {
+    "index.html": "1f941373"
+  },
+  "fv/posts/Contornos/index.qmd": {
+    "index.html": "390f193d"
+  },
+  "fv/posts/Ukraine_map_ggplot2/index.qmd": {
+    "index.html": "9fdc49d4"
+  },
+  "fv/posts/World_Cup/index.qmd": {
+    "index.html": "9fdfe0c9"
+  },
+  "fv/posts/coffee/index.qmd": {
+    "index.html": "535d99c3"
+  },
+  "fv/posts/copenhague/index.qmd": {
+    "index.html": "d3d7afcc"
+  },
+  "fv/posts/d/index.qmd": {
+    "index.html": "6df7cd5c"
+  },
+  "fv/posts/emissions/index.qmd": {
+    "index.html": "8391e4ea"
+  },
+  "fv/posts/enfermedades/index.qmd": {
+    "index.html": "2fef31fb"
+  },
+  "fv/posts/map_UK/index.qmd": {
+    "index.html": "f56267b7"
+  },
+  "fv/posts/map_china/index.qmd": {
+    "index.html": "f975a4c0"
+  },
+  "fv/posts/notes_ggplot2/index.qmd": {
+    "index.html": "3c55c35e"
+  },
+  "fv/posts/tormentas/index.qmd": {
+    "index.html": "e885ecc2"
+  },
+  "fv/posts/webScraping/index.qmd": {
+    "index.html": "96e28570"
   }
 }
