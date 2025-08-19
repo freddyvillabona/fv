@@ -16,4 +16,7 @@ about:
       
     - icon: facebook
       href: https://facebook.com/programandoenr
+      
+    - text: LinkedIn
+      href: https://linkedin.com/freddvillabona
 ---
