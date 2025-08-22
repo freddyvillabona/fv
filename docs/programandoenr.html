@@ -80,8 +80,7 @@ ul.task-list li input[type="checkbox"] {
 
     const options = {
       valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      page: 25,
-    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      
       searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
@@ -108,6 +107,7 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-DSTHFZLFYC', { 'anonymize_ip': true});
 </script>
+<style>html{ scroll-behavior: smooth; }</style>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -139,9 +139,10 @@ window.Quarto = {
 };
 </script>
 
+<link rel="stylesheet" href="site_libs/quarto-contrib/quarto-project/holtzy/lumo/style.css">
 </head>
 
-<body class="nav-fixed">
+<body class="floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
@@ -185,32 +186,95 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">📊 programandoenR</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta column-page-left">
+<header id="title-block-header" style="position: relative">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 
-      
-    
-      
-    </div>
-    
+  <!-- This is the div in which the background image will be included -->
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  <!-- This is the div in which the particles will be included -->
+  
+  <!-- Actual content on top of the particles-->
+  <div class="title-block-content">
+    <!-- Logo -->
+    
+    <!-- Title -->
+        <center>
+    <h1 class="title">📊 programandoenR</h1>
+    </center>
+    
+    <hr>
+
+    <!-- Subtitle -->
+    
+    <!-- Author -->
+    
+    <!-- Date -->
+    
+    <!-- Particle.js script loaded from a CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- use the particle js library with our own config (json file). -->
+    <script>
+      particlesJS.load(
+        "particles-js",
+        "https://raw.githubusercontent.com/holtzy/lumo/main/_extensions/lumo/particles.json"
+      );
+    </script>
+  </div>
+</header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
+  
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(68)</span></div><div class="category" data-category="analysis">analysis <span class="quarto-category-count">(56)</span></div><div class="category" data-category="code">code <span class="quarto-category-count">(68)</span></div><div class="category" data-category="map">map <span class="quarto-category-count">(12)</span></div><div class="category" data-category="tips">tips <span class="quarto-category-count">(4)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(17)</span></div><div class="category" data-category="analysis">analysis <span class="quarto-category-count">(14)</span></div><div class="category" data-category="code">code <span class="quarto-category-count">(17)</span></div><div class="category" data-category="map">map <span class="quarto-category-count">(3)</span></div><div class="category" data-category="tips">tips <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
+<style>
+  :root {
+    --primary-color: ;
+  }
+  .title-block-content {
+    position: relative;
+    padding-top: 130px;
+    padding-bottom: 130px;
+    max-width: 752px;
+    margin: auto;
+  }
+  .header-keyword {
+    color: rgb(59, 59, 59);
+    opacity: 0.5;
+    font-size: 14;
+  }
+  .octocat-container {
+    fill: var(--primary-color);
+    color: #fff;
+    position: absolute;
+    top: 0;
+    border: 0;
+    right: 0;
+  }
+  #particles-js {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+  }
+  .bg-image {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+</style>
 
+
+
+<!------------------------- Code for the octocat (github Mascot) that will be included if a link to the github repo is provided. ------------------->
 
 
 
@@ -220,115 +284,7 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="code,map" data-listing-date-sort="1729116000000" data-listing-file-modified-sort="1755459454122" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="782">
-<div class="thumbnail">
-<p><a href="./Sin título/posts/map_china/index.html" class="no-external"></a></p><a href="./Sin título/posts/map_china/index.html" class="no-external">
-<p><img loading="lazy" src="./Sin título/posts/map_china/china_3.png" class="thumbnail-image"></p>
-</a><p><a href="./Sin título/posts/map_china/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./Sin título/posts/map_china/index.html" class="no-external">Población de China</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./Sin título/posts/map_china/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('map'); return false;">
-map
-</div>
-</div>
-<div class="listing-description">
-<a href="./Sin título/posts/map_china/index.html" class="no-external">En este caso trabajando con la librería “mapchina”. Esta librería contiene capas shapefile y datos poblacionales. Trabajando con la función gradiente de colores.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./Sin título/posts/map_china/index.html" class="no-external">
-<div class="listing-date">
-Oct 17, 2024
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="code,map" data-listing-date-sort="1729116000000" data-listing-file-modified-sort="1755004143291" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="782">
-<div class="thumbnail">
-<p><a href="./fv/fv/posts/map_china/index.html" class="no-external"></a></p><a href="./fv/fv/posts/map_china/index.html" class="no-external">
-<p><img loading="lazy" src="./fv/fv/posts/map_china/china_3.png" class="thumbnail-image"></p>
-</a><p><a href="./fv/fv/posts/map_china/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./fv/fv/posts/map_china/index.html" class="no-external">Población de China</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./fv/fv/posts/map_china/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('map'); return false;">
-map
-</div>
-</div>
-<div class="listing-description">
-<a href="./fv/fv/posts/map_china/index.html" class="no-external">En este caso trabajando con la librería “mapchina”. Esta librería contiene capas shapefile y datos poblacionales. Trabajando con la función gradiente de colores.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./fv/fv/posts/map_china/index.html" class="no-external">
-<div class="listing-date">
-Oct 17, 2024
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="code,map" data-listing-date-sort="1729116000000" data-listing-file-modified-sort="1754748144701" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="782">
-<div class="thumbnail">
-<p><a href="./fv/posts/map_china/index.html" class="no-external"></a></p><a href="./fv/posts/map_china/index.html" class="no-external">
-<p><img loading="lazy" src="./fv/posts/map_china/china_3.png" class="thumbnail-image"></p>
-</a><p><a href="./fv/posts/map_china/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./fv/posts/map_china/index.html" class="no-external">Población de China</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./fv/posts/map_china/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('map'); return false;">
-map
-</div>
-</div>
-<div class="listing-description">
-<a href="./fv/posts/map_china/index.html" class="no-external">En este caso trabajando con la librería “mapchina”. Esta librería contiene capas shapefile y datos poblacionales. Trabajando con la función gradiente de colores.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./fv/posts/map_china/index.html" class="no-external">
-<div class="listing-date">
-Oct 17, 2024
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="code,map" data-listing-date-sort="1729116000000" data-listing-file-modified-sort="1729186178005" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="782">
+<div class="quarto-post image-right" data-index="0" data-categories="code,map" data-listing-date-sort="1729116000000" data-listing-file-modified-sort="1755611375673" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="782">
 <div class="thumbnail">
 <p><a href="./posts/map_china/index.html" class="no-external"></a></p><a href="./posts/map_china/index.html" class="no-external">
 <p><img loading="lazy" src="./posts/map_china/china_3.png" class="thumbnail-image"></p>
@@ -364,223 +320,7 @@ FV
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="code,analysis" data-listing-date-sort="1726956000000" data-listing-file-modified-sort="1755459454114" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="398">
-<div class="thumbnail">
-<p><a href="./Sin título/posts/enfermedades/index.html" class="no-external"></a></p><a href="./Sin título/posts/enfermedades/index.html" class="no-external">
-<p><img loading="lazy" src="./Sin título/posts/enfermedades/ef.jpg" class="thumbnail-image"></p>
-</a><p><a href="./Sin título/posts/enfermedades/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./Sin título/posts/enfermedades/index.html" class="no-external">Gráfico de barras con ggplot2</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./Sin título/posts/enfermedades/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./Sin título/posts/enfermedades/index.html" class="no-external">Esta vez se tiene un gráfico de barras “ggplot2” con paleta de colores manual.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./Sin título/posts/enfermedades/index.html" class="no-external">
-<div class="listing-date">
-Sep 22, 2024
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="code,analysis" data-listing-date-sort="1726956000000" data-listing-file-modified-sort="1755459454130" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="129">
-<div class="thumbnail">
-<p><a href="./Sin título/posts/webScraping/index.html" class="no-external"></a></p><a href="./Sin título/posts/webScraping/index.html" class="no-external">
-<p><img loading="lazy" src="./Sin título/posts/webScraping/ws.png" class="thumbnail-image"></p>
-</a><p><a href="./Sin título/posts/webScraping/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./Sin título/posts/webScraping/index.html" class="no-external">Web Scraping con rvest</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./Sin título/posts/webScraping/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./Sin título/posts/webScraping/index.html" class="no-external">Esta vez se trabaja con el paquete ”rvest” y la intención es obtener un marco de datos de Wikipedia.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./Sin título/posts/webScraping/index.html" class="no-external">
-<div class="listing-date">
-Sep 22, 2024
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-categories="code,analysis" data-listing-date-sort="1726956000000" data-listing-file-modified-sort="1755004143285" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="398">
-<div class="thumbnail">
-<p><a href="./fv/fv/posts/enfermedades/index.html" class="no-external"></a></p><a href="./fv/fv/posts/enfermedades/index.html" class="no-external">
-<p><img loading="lazy" src="./fv/fv/posts/enfermedades/ef.jpg" class="thumbnail-image"></p>
-</a><p><a href="./fv/fv/posts/enfermedades/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./fv/fv/posts/enfermedades/index.html" class="no-external">Gráfico de barras con ggplot2</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./fv/fv/posts/enfermedades/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./fv/fv/posts/enfermedades/index.html" class="no-external">Esta vez se tiene un gráfico de barras “ggplot2” con paleta de colores manual.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./fv/fv/posts/enfermedades/index.html" class="no-external">
-<div class="listing-date">
-Sep 22, 2024
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="7" data-categories="code,analysis" data-listing-date-sort="1726956000000" data-listing-file-modified-sort="1755004143294" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="129">
-<div class="thumbnail">
-<p><a href="./fv/fv/posts/webScraping/index.html" class="no-external"></a></p><a href="./fv/fv/posts/webScraping/index.html" class="no-external">
-<p><img loading="lazy" src="./fv/fv/posts/webScraping/ws.png" class="thumbnail-image"></p>
-</a><p><a href="./fv/fv/posts/webScraping/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./fv/fv/posts/webScraping/index.html" class="no-external">Web Scraping con rvest</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./fv/fv/posts/webScraping/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./fv/fv/posts/webScraping/index.html" class="no-external">Esta vez se trabaja con el paquete ”rvest” y la intención es obtener un marco de datos de Wikipedia.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./fv/fv/posts/webScraping/index.html" class="no-external">
-<div class="listing-date">
-Sep 22, 2024
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="8" data-categories="code,analysis" data-listing-date-sort="1726956000000" data-listing-file-modified-sort="1754748144693" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="398">
-<div class="thumbnail">
-<p><a href="./fv/posts/enfermedades/index.html" class="no-external"></a></p><a href="./fv/posts/enfermedades/index.html" class="no-external">
-<p><img loading="lazy" src="./fv/posts/enfermedades/ef.jpg" class="thumbnail-image"></p>
-</a><p><a href="./fv/posts/enfermedades/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./fv/posts/enfermedades/index.html" class="no-external">Gráfico de barras con ggplot2</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./fv/posts/enfermedades/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./fv/posts/enfermedades/index.html" class="no-external">Esta vez se tiene un gráfico de barras “ggplot2” con paleta de colores manual.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./fv/posts/enfermedades/index.html" class="no-external">
-<div class="listing-date">
-Sep 22, 2024
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="9" data-categories="code,analysis" data-listing-date-sort="1726956000000" data-listing-file-modified-sort="1754748144706" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="129">
-<div class="thumbnail">
-<p><a href="./fv/posts/webScraping/index.html" class="no-external"></a></p><a href="./fv/posts/webScraping/index.html" class="no-external">
-<p><img loading="lazy" src="./fv/posts/webScraping/ws.png" class="thumbnail-image"></p>
-</a><p><a href="./fv/posts/webScraping/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./fv/posts/webScraping/index.html" class="no-external">Web Scraping con rvest</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./fv/posts/webScraping/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./fv/posts/webScraping/index.html" class="no-external">Esta vez se trabaja con el paquete ”rvest” y la intención es obtener un marco de datos de Wikipedia.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./fv/posts/webScraping/index.html" class="no-external">
-<div class="listing-date">
-Sep 22, 2024
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="10" data-categories="code,analysis" data-listing-date-sort="1726956000000" data-listing-file-modified-sort="1727017544134" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="398">
+<div class="quarto-post image-right" data-index="1" data-categories="code,analysis" data-listing-date-sort="1726956000000" data-listing-file-modified-sort="1755611375665" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="398">
 <div class="thumbnail">
 <p><a href="./posts/enfermedades/index.html" class="no-external"></a></p><a href="./posts/enfermedades/index.html" class="no-external">
 <p><img loading="lazy" src="./posts/enfermedades/ef.jpg" class="thumbnail-image"></p>
@@ -616,7 +356,7 @@ FV
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="11" data-categories="code,analysis" data-listing-date-sort="1726956000000" data-listing-file-modified-sort="1727017065766" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="129">
+<div class="quarto-post image-right" data-index="2" data-categories="code,analysis" data-listing-date-sort="1726956000000" data-listing-file-modified-sort="1755611375678" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="129">
 <div class="thumbnail">
 <p><a href="./posts/webScraping/index.html" class="no-external"></a></p><a href="./posts/webScraping/index.html" class="no-external">
 <p><img loading="lazy" src="./posts/webScraping/ws.png" class="thumbnail-image"></p>
@@ -652,115 +392,7 @@ FV
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="12" data-categories="code,analysis" data-listing-date-sort="1717365600000" data-listing-file-modified-sort="1755459454129" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2103">
-<div class="thumbnail">
-<p><a href="./Sin título/posts/vinos/index.html" class="no-external"></a></p><a href="./Sin título/posts/vinos/index.html" class="no-external">
-<p><img loading="lazy" src="./Sin título/posts/vinos/vinos.jpg" class="thumbnail-image"></p>
-</a><p><a href="./Sin título/posts/vinos/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./Sin título/posts/vinos/index.html" class="no-external">Vinos 2021, análisis descriptivo</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./Sin título/posts/vinos/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./Sin título/posts/vinos/index.html" class="no-external">El objetivo es extraer información útil a partir de un análisis estadístico para este marco de datos.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./Sin título/posts/vinos/index.html" class="no-external">
-<div class="listing-date">
-Jun 3, 2024
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="13" data-categories="code,analysis" data-listing-date-sort="1717365600000" data-listing-file-modified-sort="1755004143293" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2103">
-<div class="thumbnail">
-<p><a href="./fv/fv/posts/vinos/index.html" class="no-external"></a></p><a href="./fv/fv/posts/vinos/index.html" class="no-external">
-<p><img loading="lazy" src="./fv/fv/posts/vinos/vinos.jpg" class="thumbnail-image"></p>
-</a><p><a href="./fv/fv/posts/vinos/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./fv/fv/posts/vinos/index.html" class="no-external">Vinos 2021, análisis descriptivo</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./fv/fv/posts/vinos/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./fv/fv/posts/vinos/index.html" class="no-external">El objetivo es extraer información útil a partir de un análisis estadístico para este marco de datos.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./fv/fv/posts/vinos/index.html" class="no-external">
-<div class="listing-date">
-Jun 3, 2024
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="14" data-categories="code,analysis" data-listing-date-sort="1717365600000" data-listing-file-modified-sort="1754748144705" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2103">
-<div class="thumbnail">
-<p><a href="./fv/posts/vinos/index.html" class="no-external"></a></p><a href="./fv/posts/vinos/index.html" class="no-external">
-<p><img loading="lazy" src="./fv/posts/vinos/vinos.jpg" class="thumbnail-image"></p>
-</a><p><a href="./fv/posts/vinos/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./fv/posts/vinos/index.html" class="no-external">Vinos 2021, análisis descriptivo</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./fv/posts/vinos/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./fv/posts/vinos/index.html" class="no-external">El objetivo es extraer información útil a partir de un análisis estadístico para este marco de datos.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./fv/posts/vinos/index.html" class="no-external">
-<div class="listing-date">
-Jun 3, 2024
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="15" data-categories="code,analysis" data-listing-date-sort="1717365600000" data-listing-file-modified-sort="1717399480155" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2103">
+<div class="quarto-post image-right" data-index="3" data-categories="code,analysis" data-listing-date-sort="1717365600000" data-listing-file-modified-sort="1755611375677" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2103">
 <div class="thumbnail">
 <p><a href="./posts/vinos/index.html" class="no-external"></a></p><a href="./posts/vinos/index.html" class="no-external">
 <p><img loading="lazy" src="./posts/vinos/vinos.jpg" class="thumbnail-image"></p>
@@ -796,115 +428,7 @@ FV
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="16" data-categories="code,analysis" data-listing-date-sort="1717279200000" data-listing-file-modified-sort="1755459454104" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="666">
-<div class="thumbnail">
-<p><a href="./Sin título/posts/bar_horizontal/index.html" class="no-external"></a></p><a href="./Sin título/posts/bar_horizontal/index.html" class="no-external">
-<p><img loading="lazy" src="./Sin título/posts/bar_horizontal/bar1.png" class="thumbnail-image"></p>
-</a><p><a href="./Sin título/posts/bar_horizontal/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./Sin título/posts/bar_horizontal/index.html" class="no-external">Gráfico de barras horizontales con ggplot2 🇧🇷</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./Sin título/posts/bar_horizontal/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./Sin título/posts/bar_horizontal/index.html" class="no-external">Los datos representan el Índice de Desarrollo Humano en los diferentes distritos del Municipio de São Paulo en el 2010.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./Sin título/posts/bar_horizontal/index.html" class="no-external">
-<div class="listing-date">
-Jun 2, 2024
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="17" data-categories="code,analysis" data-listing-date-sort="1717279200000" data-listing-file-modified-sort="1755004143279" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="666">
-<div class="thumbnail">
-<p><a href="./fv/fv/posts/bar_horizontal/index.html" class="no-external"></a></p><a href="./fv/fv/posts/bar_horizontal/index.html" class="no-external">
-<p><img loading="lazy" src="./fv/fv/posts/bar_horizontal/bar1.png" class="thumbnail-image"></p>
-</a><p><a href="./fv/fv/posts/bar_horizontal/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./fv/fv/posts/bar_horizontal/index.html" class="no-external">Gráfico de barras horizontales con ggplot2 🇧🇷</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./fv/fv/posts/bar_horizontal/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./fv/fv/posts/bar_horizontal/index.html" class="no-external">Los datos representan el Índice de Desarrollo Humano en los diferentes distritos del Municipio de São Paulo en el 2010.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./fv/fv/posts/bar_horizontal/index.html" class="no-external">
-<div class="listing-date">
-Jun 2, 2024
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="18" data-categories="code,analysis" data-listing-date-sort="1717279200000" data-listing-file-modified-sort="1754748144686" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="666">
-<div class="thumbnail">
-<p><a href="./fv/posts/bar_horizontal/index.html" class="no-external"></a></p><a href="./fv/posts/bar_horizontal/index.html" class="no-external">
-<p><img loading="lazy" src="./fv/posts/bar_horizontal/bar1.png" class="thumbnail-image"></p>
-</a><p><a href="./fv/posts/bar_horizontal/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./fv/posts/bar_horizontal/index.html" class="no-external">Gráfico de barras horizontales con ggplot2 🇧🇷</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./fv/posts/bar_horizontal/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./fv/posts/bar_horizontal/index.html" class="no-external">Los datos representan el Índice de Desarrollo Humano en los diferentes distritos del Municipio de São Paulo en el 2010.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./fv/posts/bar_horizontal/index.html" class="no-external">
-<div class="listing-date">
-Jun 2, 2024
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="19" data-categories="code,analysis" data-listing-date-sort="1717279200000" data-listing-file-modified-sort="1718016690814" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="666">
+<div class="quarto-post image-right" data-index="4" data-categories="code,analysis" data-listing-date-sort="1717279200000" data-listing-file-modified-sort="1755611375655" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="666">
 <div class="thumbnail">
 <p><a href="./posts/bar_horizontal/index.html" class="no-external"></a></p><a href="./posts/bar_horizontal/index.html" class="no-external">
 <p><img loading="lazy" src="./posts/bar_horizontal/bar1.png" class="thumbnail-image"></p>
@@ -940,151 +464,7 @@ FV
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="20" data-categories="code,analysis,tips" data-listing-date-sort="1717106400000" data-listing-file-modified-sort="1755459454114" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="23">
-<div class="thumbnail">
-<p><a href="./Sin título/posts/library_unikn/index.html" class="no-external"></a></p><a href="./Sin título/posts/library_unikn/index.html" class="no-external">
-<p><img loading="lazy" src="./Sin título/posts/library_unikn/unikn.png" class="thumbnail-image"></p>
-</a><p><a href="./Sin título/posts/library_unikn/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./Sin título/posts/library_unikn/index.html" class="no-external">Generar n colores con ayuda de la librería unikn</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./Sin título/posts/library_unikn/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('tips'); return false;">
-tips
-</div>
-</div>
-<div class="listing-description">
-<a href="./Sin título/posts/library_unikn/index.html" class="no-external">
-  :root {
-    --primary-color: ;
-  }
-  .title-block-content {
-    position: relative;
-    padding-top: 130px;
-    padding-bottom: 130px;
-    max-width: 752px;
-    margin…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./Sin título/posts/library_unikn/index.html" class="no-external">
-<div class="listing-date">
-May 31, 2024
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="21" data-categories="code,analysis,tips" data-listing-date-sort="1717106400000" data-listing-file-modified-sort="1755004143285" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="23">
-<div class="thumbnail">
-<p><a href="./fv/fv/posts/library_unikn/index.html" class="no-external"></a></p><a href="./fv/fv/posts/library_unikn/index.html" class="no-external">
-<p><img loading="lazy" src="./fv/fv/posts/library_unikn/unikn.png" class="thumbnail-image"></p>
-</a><p><a href="./fv/fv/posts/library_unikn/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./fv/fv/posts/library_unikn/index.html" class="no-external">Generar n colores con ayuda de la librería unikn</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./fv/fv/posts/library_unikn/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('tips'); return false;">
-tips
-</div>
-</div>
-<div class="listing-description">
-<a href="./fv/fv/posts/library_unikn/index.html" class="no-external">
-  :root {
-    --primary-color: ;
-  }
-  .title-block-content {
-    position: relative;
-    padding-top: 130px;
-    padding-bottom: 130px;
-    max-width: 752px;
-    margin…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./fv/fv/posts/library_unikn/index.html" class="no-external">
-<div class="listing-date">
-May 31, 2024
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="22" data-categories="code,analysis,tips" data-listing-date-sort="1717106400000" data-listing-file-modified-sort="1754748144693" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="23">
-<div class="thumbnail">
-<p><a href="./fv/posts/library_unikn/index.html" class="no-external"></a></p><a href="./fv/posts/library_unikn/index.html" class="no-external">
-<p><img loading="lazy" src="./fv/posts/library_unikn/unikn.png" class="thumbnail-image"></p>
-</a><p><a href="./fv/posts/library_unikn/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./fv/posts/library_unikn/index.html" class="no-external">Generar n colores con ayuda de la librería unikn</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./fv/posts/library_unikn/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('tips'); return false;">
-tips
-</div>
-</div>
-<div class="listing-description">
-<a href="./fv/posts/library_unikn/index.html" class="no-external">
-  :root {
-    --primary-color: ;
-  }
-  .title-block-content {
-    position: relative;
-    padding-top: 130px;
-    padding-bottom: 130px;
-    max-width: 752px;
-    margin…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./fv/posts/library_unikn/index.html" class="no-external">
-<div class="listing-date">
-May 31, 2024
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="23" data-categories="code,analysis,tips" data-listing-date-sort="1717106400000" data-listing-file-modified-sort="1717180165076" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="23">
+<div class="quarto-post image-right" data-index="5" data-categories="code,analysis,tips" data-listing-date-sort="1717106400000" data-listing-file-modified-sort="1755611375666" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="23">
 <div class="thumbnail">
 <p><a href="./posts/library_unikn/index.html" class="no-external"></a></p><a href="./posts/library_unikn/index.html" class="no-external">
 <p><img loading="lazy" src="./posts/library_unikn/unikn.png" class="thumbnail-image"></p>
@@ -1110,15 +490,15 @@ tips
 </div>
 <div class="listing-description">
 <a href="./posts/library_unikn/index.html" class="no-external">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">{</span>
-<span id="cb1-2"><span class="fu">library</span>(<span class="st">"unikn"</span>)</span>
-<span id="cb1-3">}</span>
-<span id="cb1-4"></span>
-<span id="cb1-5"><span class="co"># Genear 5 colores a partir de 2:</span></span>
-<span id="cb1-6"></span>
-<span id="cb1-7">pal <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"#c9bfcf"</span>,<span class="st">"#3b2a46"</span>)</span>
-<span id="cb1-8">pal <span class="ot">&lt;-</span> unikn<span class="sc">::</span><span class="fu">usecol</span>(pal, <span class="at">n =</span> <span class="dv">5</span>)</span></code></pre></div>
-</a>
+  :root {
+    --primary-color: ;
+  }
+  .title-block-content {
+    position: relative;
+    padding-top: 130px;
+    padding-bottom: 130px;
+    max-width: 752px;
+    margin…</a>
 </div>
 </div>
 <div class="metadata">
@@ -1132,118 +512,10 @@ FV
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="24" data-categories="code,analysis" data-listing-date-sort="1716674400000" data-listing-file-modified-sort="1755459454108" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="299">
-<div class="thumbnail">
-<p><a href="./Sin título/posts/copenhague/index.html" class="no-external"></a></p><a href="./Sin título/posts/copenhague/index.html" class="no-external">
-<p><img loading="lazy" src="./Sin título/posts/copenhague/copenhague.png" class="thumbnail-image"></p>
-</a><p><a href="./Sin título/posts/copenhague/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./Sin título/posts/copenhague/index.html" class="no-external">Temperatura media en Copenhague, Dinamarca</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./Sin título/posts/copenhague/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./Sin título/posts/copenhague/index.html" class="no-external">Datos: climate_CPH (1995-2019)</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./Sin título/posts/copenhague/index.html" class="no-external">
-<div class="listing-date">
-May 26, 2024
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="25" data-categories="code,analysis" data-listing-date-sort="1716674400000" data-listing-file-modified-sort="1755004143281" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="299">
-<div class="thumbnail">
-<p><a href="./fv/fv/posts/copenhague/index.html" class="no-external"></a></p><a href="./fv/fv/posts/copenhague/index.html" class="no-external">
-<p><img loading="lazy" data-src="./fv/fv/posts/copenhague/copenhague.png" class="thumbnail-image"></p>
-</a><p><a href="./fv/fv/posts/copenhague/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./fv/fv/posts/copenhague/index.html" class="no-external">Temperatura media en Copenhague, Dinamarca</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./fv/fv/posts/copenhague/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./fv/fv/posts/copenhague/index.html" class="no-external">Datos: climate_CPH (1995-2019)</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./fv/fv/posts/copenhague/index.html" class="no-external">
-<div class="listing-date">
-May 26, 2024
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="26" data-categories="code,analysis" data-listing-date-sort="1716674400000" data-listing-file-modified-sort="1754748144688" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="299">
-<div class="thumbnail">
-<p><a href="./fv/posts/copenhague/index.html" class="no-external"></a></p><a href="./fv/posts/copenhague/index.html" class="no-external">
-<p><img loading="lazy" data-src="./fv/posts/copenhague/copenhague.png" class="thumbnail-image"></p>
-</a><p><a href="./fv/posts/copenhague/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./fv/posts/copenhague/index.html" class="no-external">Temperatura media en Copenhague, Dinamarca</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./fv/posts/copenhague/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./fv/posts/copenhague/index.html" class="no-external">Datos: climate_CPH (1995-2019)</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./fv/posts/copenhague/index.html" class="no-external">
-<div class="listing-date">
-May 26, 2024
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="27" data-categories="code,analysis" data-listing-date-sort="1716674400000" data-listing-file-modified-sort="1716739449137" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="299">
+<div class="quarto-post image-right" data-index="6" data-categories="code,analysis" data-listing-date-sort="1716674400000" data-listing-file-modified-sort="1755611375662" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="299">
 <div class="thumbnail">
 <p><a href="./posts/copenhague/index.html" class="no-external"></a></p><a href="./posts/copenhague/index.html" class="no-external">
-<p><img loading="lazy" data-src="./posts/copenhague/copenhague.png" class="thumbnail-image"></p>
+<p><img loading="lazy" src="./posts/copenhague/copenhague.png" class="thumbnail-image"></p>
 </a><p><a href="./posts/copenhague/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
@@ -1276,118 +548,10 @@ FV
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="28" data-categories="code,analysis" data-listing-date-sort="1715983200000" data-listing-file-modified-sort="1755459454123" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="881">
-<div class="thumbnail">
-<p><a href="./Sin título/posts/tormentas/index.html" class="no-external"></a></p><a href="./Sin título/posts/tormentas/index.html" class="no-external">
-<p><img loading="lazy" data-src="./Sin título/posts/tormentas/tormenta.png" class="thumbnail-image"></p>
-</a><p><a href="./Sin título/posts/tormentas/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./Sin título/posts/tormentas/index.html" class="no-external">Tormentas tropicales en el Océano Atlántico</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./Sin título/posts/tormentas/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./Sin título/posts/tormentas/index.html" class="no-external">Ciclones desde 2008 a 2022 - Datos: NOAA</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./Sin título/posts/tormentas/index.html" class="no-external">
-<div class="listing-date">
-May 18, 2024
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="29" data-categories="code,analysis" data-listing-date-sort="1715983200000" data-listing-file-modified-sort="1755004143292" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="881">
-<div class="thumbnail">
-<p><a href="./fv/fv/posts/tormentas/index.html" class="no-external"></a></p><a href="./fv/fv/posts/tormentas/index.html" class="no-external">
-<p><img loading="lazy" data-src="./fv/fv/posts/tormentas/tormenta.png" class="thumbnail-image"></p>
-</a><p><a href="./fv/fv/posts/tormentas/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./fv/fv/posts/tormentas/index.html" class="no-external">Tormentas tropicales en el Océano Atlántico</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./fv/fv/posts/tormentas/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./fv/fv/posts/tormentas/index.html" class="no-external">Ciclones desde 2008 a 2022 - Datos: NOAA</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./fv/fv/posts/tormentas/index.html" class="no-external">
-<div class="listing-date">
-May 18, 2024
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="30" data-categories="code,analysis" data-listing-date-sort="1715983200000" data-listing-file-modified-sort="1754748144702" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="881">
-<div class="thumbnail">
-<p><a href="./fv/posts/tormentas/index.html" class="no-external"></a></p><a href="./fv/posts/tormentas/index.html" class="no-external">
-<p><img loading="lazy" data-src="./fv/posts/tormentas/tormenta.png" class="thumbnail-image"></p>
-</a><p><a href="./fv/posts/tormentas/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./fv/posts/tormentas/index.html" class="no-external">Tormentas tropicales en el Océano Atlántico</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./fv/posts/tormentas/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./fv/posts/tormentas/index.html" class="no-external">Ciclones desde 2008 a 2022 - Datos: NOAA</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./fv/posts/tormentas/index.html" class="no-external">
-<div class="listing-date">
-May 18, 2024
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="31" data-categories="code,analysis" data-listing-date-sort="1715983200000" data-listing-file-modified-sort="1716037450011" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="881">
+<div class="quarto-post image-right" data-index="7" data-categories="code,analysis" data-listing-date-sort="1715983200000" data-listing-file-modified-sort="1755611375674" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="881">
 <div class="thumbnail">
 <p><a href="./posts/tormentas/index.html" class="no-external"></a></p><a href="./posts/tormentas/index.html" class="no-external">
-<p><img loading="lazy" data-src="./posts/tormentas/tormenta.png" class="thumbnail-image"></p>
+<p><img loading="lazy" src="./posts/tormentas/tormenta.png" class="thumbnail-image"></p>
 </a><p><a href="./posts/tormentas/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
@@ -1420,118 +584,10 @@ FV
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="32" data-categories="code,analysis" data-listing-date-sort="1700521200000" data-listing-file-modified-sort="1755459454106" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="906">
-<div class="thumbnail">
-<p><a href="./Sin título/posts/coffee/index.html" class="no-external"></a></p><a href="./Sin título/posts/coffee/index.html" class="no-external">
-<p><img loading="lazy" data-src="./Sin título/posts/coffee/cafe1.png" class="thumbnail-image"></p>
-</a><p><a href="./Sin título/posts/coffee/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./Sin título/posts/coffee/index.html" class="no-external">Puntuación por taza de café (CQI)</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./Sin título/posts/coffee/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./Sin título/posts/coffee/index.html" class="no-external">En este gráfico destacan los cinco países con mayor producción de café en el mundo, tomando en cuenta varias medidas de calidad: aroma, sabor, regusto, acidez, cuerpo…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./Sin título/posts/coffee/index.html" class="no-external">
-<div class="listing-date">
-Nov 21, 2023
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="33" data-categories="code,analysis" data-listing-date-sort="1700521200000" data-listing-file-modified-sort="1755004143280" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="906">
-<div class="thumbnail">
-<p><a href="./fv/fv/posts/coffee/index.html" class="no-external"></a></p><a href="./fv/fv/posts/coffee/index.html" class="no-external">
-<p><img loading="lazy" data-src="./fv/fv/posts/coffee/cafe1.png" class="thumbnail-image"></p>
-</a><p><a href="./fv/fv/posts/coffee/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./fv/fv/posts/coffee/index.html" class="no-external">Puntuación por taza de café (CQI)</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./fv/fv/posts/coffee/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./fv/fv/posts/coffee/index.html" class="no-external">En este gráfico destacan los cinco países con mayor producción de café en el mundo, tomando en cuenta varias medidas de calidad: aroma, sabor, regusto, acidez, cuerpo…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./fv/fv/posts/coffee/index.html" class="no-external">
-<div class="listing-date">
-Nov 21, 2023
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="34" data-categories="code,analysis" data-listing-date-sort="1700521200000" data-listing-file-modified-sort="1754748144687" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="906">
-<div class="thumbnail">
-<p><a href="./fv/posts/coffee/index.html" class="no-external"></a></p><a href="./fv/posts/coffee/index.html" class="no-external">
-<p><img loading="lazy" data-src="./fv/posts/coffee/cafe1.png" class="thumbnail-image"></p>
-</a><p><a href="./fv/posts/coffee/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./fv/posts/coffee/index.html" class="no-external">Puntuación por taza de café (CQI)</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./fv/posts/coffee/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./fv/posts/coffee/index.html" class="no-external">En este gráfico destacan los cinco países con mayor producción de café en el mundo, tomando en cuenta varias medidas de calidad: aroma, sabor, regusto, acidez, cuerpo…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./fv/posts/coffee/index.html" class="no-external">
-<div class="listing-date">
-Nov 21, 2023
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="35" data-categories="code,analysis" data-listing-date-sort="1700521200000" data-listing-file-modified-sort="1700601394115" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="906">
+<div class="quarto-post image-right" data-index="8" data-categories="code,analysis" data-listing-date-sort="1700521200000" data-listing-file-modified-sort="1755611375661" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="906">
 <div class="thumbnail">
 <p><a href="./posts/coffee/index.html" class="no-external"></a></p><a href="./posts/coffee/index.html" class="no-external">
-<p><img loading="lazy" data-src="./posts/coffee/cafe1.png" class="thumbnail-image"></p>
+<p><img loading="lazy" src="./posts/coffee/cafe1.png" class="thumbnail-image"></p>
 </a><p><a href="./posts/coffee/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
@@ -1564,118 +620,10 @@ FV
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="36" data-categories="code,analysis" data-listing-date-sort="1685138400000" data-listing-file-modified-sort="1755459454110" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="402">
-<div class="thumbnail">
-<p><a href="./Sin título/posts/d/index.html" class="no-external"></a></p><a href="./Sin título/posts/d/index.html" class="no-external">
-<p><img loading="lazy" data-src="./Sin título/posts/d/d.png" class="thumbnail-image"></p>
-</a><p><a href="./Sin título/posts/d/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./Sin título/posts/d/index.html" class="no-external">Boxplot (data:diamonds)</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./Sin título/posts/d/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./Sin título/posts/d/index.html" class="no-external">This time we work with diamond data. It generates a diagram of box with “ggplot2”, with various details in the chart that allow better perceive the distribution of data.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./Sin título/posts/d/index.html" class="no-external">
-<div class="listing-date">
-May 27, 2023
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="37" data-categories="code,analysis" data-listing-date-sort="1685138400000" data-listing-file-modified-sort="1755004143283" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="402">
-<div class="thumbnail">
-<p><a href="./fv/fv/posts/d/index.html" class="no-external"></a></p><a href="./fv/fv/posts/d/index.html" class="no-external">
-<p><img loading="lazy" data-src="./fv/fv/posts/d/d.png" class="thumbnail-image"></p>
-</a><p><a href="./fv/fv/posts/d/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./fv/fv/posts/d/index.html" class="no-external">Boxplot (data:diamonds)</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./fv/fv/posts/d/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./fv/fv/posts/d/index.html" class="no-external">This time we work with diamond data. It generates a diagram of box with “ggplot2”, with various details in the chart that allow better perceive the distribution of data.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./fv/fv/posts/d/index.html" class="no-external">
-<div class="listing-date">
-May 27, 2023
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="38" data-categories="code,analysis" data-listing-date-sort="1685138400000" data-listing-file-modified-sort="1754748144690" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="402">
-<div class="thumbnail">
-<p><a href="./fv/posts/d/index.html" class="no-external"></a></p><a href="./fv/posts/d/index.html" class="no-external">
-<p><img loading="lazy" data-src="./fv/posts/d/d.png" class="thumbnail-image"></p>
-</a><p><a href="./fv/posts/d/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./fv/posts/d/index.html" class="no-external">Boxplot (data:diamonds)</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./fv/posts/d/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./fv/posts/d/index.html" class="no-external">This time we work with diamond data. It generates a diagram of box with “ggplot2”, with various details in the chart that allow better perceive the distribution of data.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./fv/posts/d/index.html" class="no-external">
-<div class="listing-date">
-May 27, 2023
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="39" data-categories="code,analysis" data-listing-date-sort="1685138400000" data-listing-file-modified-sort="1690730955520" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="402">
+<div class="quarto-post image-right" data-index="9" data-categories="code,analysis" data-listing-date-sort="1685138400000" data-listing-file-modified-sort="1755611375663" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="402">
 <div class="thumbnail">
 <p><a href="./posts/d/index.html" class="no-external"></a></p><a href="./posts/d/index.html" class="no-external">
-<p><img loading="lazy" data-src="./posts/d/d.png" class="thumbnail-image"></p>
+<p><img loading="lazy" src="./posts/d/d.png" class="thumbnail-image"></p>
 </a><p><a href="./posts/d/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
@@ -1708,118 +656,10 @@ FV
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="40" data-categories="code,map" data-listing-date-sort="1682892000000" data-listing-file-modified-sort="1755459454116" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="304">
-<div class="thumbnail">
-<p><a href="./Sin título/posts/map_UK/index.html" class="no-external"></a></p><a href="./Sin título/posts/map_UK/index.html" class="no-external">
-<p><img loading="lazy" data-src="./Sin título/posts/map_UK/uk.png" class="thumbnail-image"></p>
-</a><p><a href="./Sin título/posts/map_UK/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./Sin título/posts/map_UK/index.html" class="no-external">Monthly sales of an online shop in the UK 🇬🇧</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./Sin título/posts/map_UK/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('map'); return false;">
-map
-</div>
-</div>
-<div class="listing-description">
-<a href="./Sin título/posts/map_UK/index.html" class="no-external">Map of the United Kingdom drawn from a shapefile layer. This is a post with executable code.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./Sin título/posts/map_UK/index.html" class="no-external">
-<div class="listing-date">
-May 1, 2023
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="41" data-categories="code,map" data-listing-date-sort="1682892000000" data-listing-file-modified-sort="1755004143286" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="304">
-<div class="thumbnail">
-<p><a href="./fv/fv/posts/map_UK/index.html" class="no-external"></a></p><a href="./fv/fv/posts/map_UK/index.html" class="no-external">
-<p><img loading="lazy" data-src="./fv/fv/posts/map_UK/uk.png" class="thumbnail-image"></p>
-</a><p><a href="./fv/fv/posts/map_UK/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./fv/fv/posts/map_UK/index.html" class="no-external">Monthly sales of an online shop in the UK 🇬🇧</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./fv/fv/posts/map_UK/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('map'); return false;">
-map
-</div>
-</div>
-<div class="listing-description">
-<a href="./fv/fv/posts/map_UK/index.html" class="no-external">Map of the United Kingdom drawn from a shapefile layer. This is a post with executable code.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./fv/fv/posts/map_UK/index.html" class="no-external">
-<div class="listing-date">
-May 1, 2023
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="42" data-categories="code,map" data-listing-date-sort="1682892000000" data-listing-file-modified-sort="1754748144694" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="304">
-<div class="thumbnail">
-<p><a href="./fv/posts/map_UK/index.html" class="no-external"></a></p><a href="./fv/posts/map_UK/index.html" class="no-external">
-<p><img loading="lazy" data-src="./fv/posts/map_UK/uk.png" class="thumbnail-image"></p>
-</a><p><a href="./fv/posts/map_UK/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./fv/posts/map_UK/index.html" class="no-external">Monthly sales of an online shop in the UK 🇬🇧</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./fv/posts/map_UK/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('map'); return false;">
-map
-</div>
-</div>
-<div class="listing-description">
-<a href="./fv/posts/map_UK/index.html" class="no-external">Map of the United Kingdom drawn from a shapefile layer. This is a post with executable code.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./fv/posts/map_UK/index.html" class="no-external">
-<div class="listing-date">
-May 1, 2023
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="43" data-categories="code,map" data-listing-date-sort="1682892000000" data-listing-file-modified-sort="1690409809227" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="304">
+<div class="quarto-post image-right" data-index="10" data-categories="code,map" data-listing-date-sort="1682892000000" data-listing-file-modified-sort="1755611375667" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="304">
 <div class="thumbnail">
 <p><a href="./posts/map_UK/index.html" class="no-external"></a></p><a href="./posts/map_UK/index.html" class="no-external">
-<p><img loading="lazy" data-src="./posts/map_UK/uk.png" class="thumbnail-image"></p>
+<p><img loading="lazy" src="./posts/map_UK/uk.png" class="thumbnail-image"></p>
 </a><p><a href="./posts/map_UK/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
@@ -1852,118 +692,10 @@ FV
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="44" data-categories="code,analysis" data-listing-date-sort="1678662000000" data-listing-file-modified-sort="1755459454017" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="646">
-<div class="thumbnail">
-<p><a href="./Sin título/posts/Towers/index.html" class="no-external"></a></p><a href="./Sin título/posts/Towers/index.html" class="no-external">
-<p><img loading="lazy" data-src="./Sin título/posts/Towers/towers.png" class="thumbnail-image"></p>
-</a><p><a href="./Sin título/posts/Towers/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./Sin título/posts/Towers/index.html" class="no-external">World’s tallest towers (Top 6)</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./Sin título/posts/Towers/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./Sin título/posts/Towers/index.html" class="no-external">World’s tallest towers (Top 6)</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./Sin título/posts/Towers/index.html" class="no-external">
-<div class="listing-date">
-Mar 13, 2023
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="45" data-categories="code,analysis" data-listing-date-sort="1678662000000" data-listing-file-modified-sort="1755004143226" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="646">
-<div class="thumbnail">
-<p><a href="./fv/fv/posts/Towers/index.html" class="no-external"></a></p><a href="./fv/fv/posts/Towers/index.html" class="no-external">
-<p><img loading="lazy" data-src="./fv/fv/posts/Towers/towers.png" class="thumbnail-image"></p>
-</a><p><a href="./fv/fv/posts/Towers/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./fv/fv/posts/Towers/index.html" class="no-external">World’s tallest towers (Top 6)</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./fv/fv/posts/Towers/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./fv/fv/posts/Towers/index.html" class="no-external">World’s tallest towers (Top 6)</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./fv/fv/posts/Towers/index.html" class="no-external">
-<div class="listing-date">
-Mar 13, 2023
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="46" data-categories="code,analysis" data-listing-date-sort="1678662000000" data-listing-file-modified-sort="1754748144652" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="646">
-<div class="thumbnail">
-<p><a href="./fv/posts/Towers/index.html" class="no-external"></a></p><a href="./fv/posts/Towers/index.html" class="no-external">
-<p><img loading="lazy" data-src="./fv/posts/Towers/towers.png" class="thumbnail-image"></p>
-</a><p><a href="./fv/posts/Towers/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./fv/posts/Towers/index.html" class="no-external">World’s tallest towers (Top 6)</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./fv/posts/Towers/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./fv/posts/Towers/index.html" class="no-external">World’s tallest towers (Top 6)</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./fv/posts/Towers/index.html" class="no-external">
-<div class="listing-date">
-Mar 13, 2023
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="47" data-categories="code,analysis" data-listing-date-sort="1678662000000" data-listing-file-modified-sort="1690718677368" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="646">
+<div class="quarto-post image-right" data-index="11" data-categories="code,analysis" data-listing-date-sort="1678662000000" data-listing-file-modified-sort="1755611375574" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="646">
 <div class="thumbnail">
 <p><a href="./posts/Towers/index.html" class="no-external"></a></p><a href="./posts/Towers/index.html" class="no-external">
-<p><img loading="lazy" data-src="./posts/Towers/towers.png" class="thumbnail-image"></p>
+<p><img loading="lazy" src="./posts/Towers/towers.png" class="thumbnail-image"></p>
 </a><p><a href="./posts/Towers/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
@@ -1996,127 +728,10 @@ FV
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="48" data-categories="code,analysis,map" data-listing-date-sort="1673391600000" data-listing-file-modified-sort="1755459454025" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="164">
-<div class="thumbnail">
-<p><a href="./Sin título/posts/Ukraine_map_ggplot2/index.html" class="no-external"></a></p><a href="./Sin título/posts/Ukraine_map_ggplot2/index.html" class="no-external">
-<p><img loading="lazy" data-src="./Sin título/posts/Ukraine_map_ggplot2/img.png" class="thumbnail-image"></p>
-</a><p><a href="./Sin título/posts/Ukraine_map_ggplot2/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./Sin título/posts/Ukraine_map_ggplot2/index.html" class="no-external">Percentage of Russian speakers in Ukraine 🇺🇦</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./Sin título/posts/Ukraine_map_ggplot2/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('map'); return false;">
-map
-</div>
-</div>
-<div class="listing-description">
-<a href="./Sin título/posts/Ukraine_map_ggplot2/index.html" class="no-external">Working with the libraries: “sf”, “stringr”, “dplyr”, “ggplot2” and “ggthemes”.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./Sin título/posts/Ukraine_map_ggplot2/index.html" class="no-external">
-<div class="listing-date">
-Jan 11, 2023
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="49" data-categories="code,analysis,map" data-listing-date-sort="1673391600000" data-listing-file-modified-sort="1755004143230" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="164">
-<div class="thumbnail">
-<p><a href="./fv/fv/posts/Ukraine_map_ggplot2/index.html" class="no-external"></a></p><a href="./fv/fv/posts/Ukraine_map_ggplot2/index.html" class="no-external">
-<p><img loading="lazy" data-src="./fv/fv/posts/Ukraine_map_ggplot2/img.png" class="thumbnail-image"></p>
-</a><p><a href="./fv/fv/posts/Ukraine_map_ggplot2/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./fv/fv/posts/Ukraine_map_ggplot2/index.html" class="no-external">Percentage of Russian speakers in Ukraine 🇺🇦</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./fv/fv/posts/Ukraine_map_ggplot2/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('map'); return false;">
-map
-</div>
-</div>
-<div class="listing-description">
-<a href="./fv/fv/posts/Ukraine_map_ggplot2/index.html" class="no-external">Working with the libraries: “sf”, “stringr”, “dplyr”, “ggplot2” and “ggthemes”.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./fv/fv/posts/Ukraine_map_ggplot2/index.html" class="no-external">
-<div class="listing-date">
-Jan 11, 2023
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="50" data-categories="code,analysis,map" data-listing-date-sort="1673391600000" data-listing-file-modified-sort="1754748144656" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="164">
-<div class="thumbnail">
-<p><a href="./fv/posts/Ukraine_map_ggplot2/index.html" class="no-external"></a></p><a href="./fv/posts/Ukraine_map_ggplot2/index.html" class="no-external">
-<p><img loading="lazy" data-src="./fv/posts/Ukraine_map_ggplot2/img.png" class="thumbnail-image"></p>
-</a><p><a href="./fv/posts/Ukraine_map_ggplot2/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./fv/posts/Ukraine_map_ggplot2/index.html" class="no-external">Percentage of Russian speakers in Ukraine 🇺🇦</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./fv/posts/Ukraine_map_ggplot2/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('map'); return false;">
-map
-</div>
-</div>
-<div class="listing-description">
-<a href="./fv/posts/Ukraine_map_ggplot2/index.html" class="no-external">Working with the libraries: “sf”, “stringr”, “dplyr”, “ggplot2” and “ggthemes”.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./fv/posts/Ukraine_map_ggplot2/index.html" class="no-external">
-<div class="listing-date">
-Jan 11, 2023
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="51" data-categories="code,analysis,map" data-listing-date-sort="1673391600000" data-listing-file-modified-sort="1690409508719" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="164">
+<div class="quarto-post image-right" data-index="12" data-categories="code,analysis,map" data-listing-date-sort="1673391600000" data-listing-file-modified-sort="1755611375582" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="164">
 <div class="thumbnail">
 <p><a href="./posts/Ukraine_map_ggplot2/index.html" class="no-external"></a></p><a href="./posts/Ukraine_map_ggplot2/index.html" class="no-external">
-<p><img loading="lazy" data-src="./posts/Ukraine_map_ggplot2/img.png" class="thumbnail-image"></p>
+<p><img loading="lazy" src="./posts/Ukraine_map_ggplot2/img.png" class="thumbnail-image"></p>
 </a><p><a href="./posts/Ukraine_map_ggplot2/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
@@ -2152,118 +767,10 @@ FV
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="52" data-categories="code,analysis" data-listing-date-sort="1669849200000" data-listing-file-modified-sort="1755459454102" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="461">
-<div class="thumbnail">
-<p><a href="./Sin título/posts/World_Cup/index.html" class="no-external"></a></p><a href="./Sin título/posts/World_Cup/index.html" class="no-external">
-<p><img loading="lazy" data-src="./Sin título/posts/World_Cup/cup.png" class="thumbnail-image"></p>
-</a><p><a href="./Sin título/posts/World_Cup/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./Sin título/posts/World_Cup/index.html" class="no-external">Winning the 2022 World Cup (Top 10 favourites)</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./Sin título/posts/World_Cup/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./Sin título/posts/World_Cup/index.html" class="no-external">Winning the 2022 World Cup</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./Sin título/posts/World_Cup/index.html" class="no-external">
-<div class="listing-date">
-Dec 1, 2022
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="53" data-categories="code,analysis" data-listing-date-sort="1669849200000" data-listing-file-modified-sort="1755004143278" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="461">
-<div class="thumbnail">
-<p><a href="./fv/fv/posts/World_Cup/index.html" class="no-external"></a></p><a href="./fv/fv/posts/World_Cup/index.html" class="no-external">
-<p><img loading="lazy" data-src="./fv/fv/posts/World_Cup/cup.png" class="thumbnail-image"></p>
-</a><p><a href="./fv/fv/posts/World_Cup/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./fv/fv/posts/World_Cup/index.html" class="no-external">Winning the 2022 World Cup (Top 10 favourites)</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./fv/fv/posts/World_Cup/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./fv/fv/posts/World_Cup/index.html" class="no-external">Winning the 2022 World Cup</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./fv/fv/posts/World_Cup/index.html" class="no-external">
-<div class="listing-date">
-Dec 1, 2022
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="54" data-categories="code,analysis" data-listing-date-sort="1669849200000" data-listing-file-modified-sort="1754748144684" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="461">
-<div class="thumbnail">
-<p><a href="./fv/posts/World_Cup/index.html" class="no-external"></a></p><a href="./fv/posts/World_Cup/index.html" class="no-external">
-<p><img loading="lazy" data-src="./fv/posts/World_Cup/cup.png" class="thumbnail-image"></p>
-</a><p><a href="./fv/posts/World_Cup/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./fv/posts/World_Cup/index.html" class="no-external">Winning the 2022 World Cup (Top 10 favourites)</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./fv/posts/World_Cup/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./fv/posts/World_Cup/index.html" class="no-external">Winning the 2022 World Cup</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./fv/posts/World_Cup/index.html" class="no-external">
-<div class="listing-date">
-Dec 1, 2022
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="55" data-categories="code,analysis" data-listing-date-sort="1669849200000" data-listing-file-modified-sort="1690635990960" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="461">
+<div class="quarto-post image-right" data-index="13" data-categories="code,analysis" data-listing-date-sort="1669849200000" data-listing-file-modified-sort="1755611375654" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="461">
 <div class="thumbnail">
 <p><a href="./posts/World_Cup/index.html" class="no-external"></a></p><a href="./posts/World_Cup/index.html" class="no-external">
-<p><img loading="lazy" data-src="./posts/World_Cup/cup.png" class="thumbnail-image"></p>
+<p><img loading="lazy" src="./posts/World_Cup/cup.png" class="thumbnail-image"></p>
 </a><p><a href="./posts/World_Cup/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
@@ -2296,118 +803,10 @@ FV
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="56" data-categories="code,analysis" data-listing-date-sort="1651010400000" data-listing-file-modified-sort="1755459454123" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="546">
-<div class="thumbnail">
-<p><a href="./Sin título/posts/notes_ggplot2/index.html" class="no-external"></a></p><a href="./Sin título/posts/notes_ggplot2/index.html" class="no-external">
-<p><img loading="lazy" data-src="./Sin título/posts/notes_ggplot2/img.svg" class="thumbnail-image"></p>
-</a><p><a href="./Sin título/posts/notes_ggplot2/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./Sin título/posts/notes_ggplot2/index.html" class="no-external">ggplot2 🇨🇭</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./Sin título/posts/notes_ggplot2/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./Sin título/posts/notes_ggplot2/index.html" class="no-external">Qualification of a university student in their last 7 semesters.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./Sin título/posts/notes_ggplot2/index.html" class="no-external">
-<div class="listing-date">
-Apr 27, 2022
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="57" data-categories="code,analysis" data-listing-date-sort="1651010400000" data-listing-file-modified-sort="1755004143291" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="546">
-<div class="thumbnail">
-<p><a href="./fv/fv/posts/notes_ggplot2/index.html" class="no-external"></a></p><a href="./fv/fv/posts/notes_ggplot2/index.html" class="no-external">
-<p><img loading="lazy" data-src="./fv/fv/posts/notes_ggplot2/img.svg" class="thumbnail-image"></p>
-</a><p><a href="./fv/fv/posts/notes_ggplot2/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./fv/fv/posts/notes_ggplot2/index.html" class="no-external">ggplot2 🇨🇭</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./fv/fv/posts/notes_ggplot2/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./fv/fv/posts/notes_ggplot2/index.html" class="no-external">Qualification of a university student in their last 7 semesters.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./fv/fv/posts/notes_ggplot2/index.html" class="no-external">
-<div class="listing-date">
-Apr 27, 2022
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="58" data-categories="code,analysis" data-listing-date-sort="1651010400000" data-listing-file-modified-sort="1754748144702" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="546">
-<div class="thumbnail">
-<p><a href="./fv/posts/notes_ggplot2/index.html" class="no-external"></a></p><a href="./fv/posts/notes_ggplot2/index.html" class="no-external">
-<p><img loading="lazy" data-src="./fv/posts/notes_ggplot2/img.svg" class="thumbnail-image"></p>
-</a><p><a href="./fv/posts/notes_ggplot2/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./fv/posts/notes_ggplot2/index.html" class="no-external">ggplot2 🇨🇭</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./fv/posts/notes_ggplot2/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./fv/posts/notes_ggplot2/index.html" class="no-external">Qualification of a university student in their last 7 semesters.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./fv/posts/notes_ggplot2/index.html" class="no-external">
-<div class="listing-date">
-Apr 27, 2022
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="59" data-categories="code,analysis" data-listing-date-sort="1651010400000" data-listing-file-modified-sort="1690409512334" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="546">
+<div class="quarto-post image-right" data-index="14" data-categories="code,analysis" data-listing-date-sort="1651010400000" data-listing-file-modified-sort="1755611375674" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="546">
 <div class="thumbnail">
 <p><a href="./posts/notes_ggplot2/index.html" class="no-external"></a></p><a href="./posts/notes_ggplot2/index.html" class="no-external">
-<p><img loading="lazy" data-src="./posts/notes_ggplot2/img.svg" class="thumbnail-image"></p>
+<p><img loading="lazy" src="./posts/notes_ggplot2/img.svg" class="thumbnail-image"></p>
 </a><p><a href="./posts/notes_ggplot2/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
@@ -2440,109 +839,10 @@ FV
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="60" data-categories="code" data-listing-date-sort="1650492000000" data-listing-file-modified-sort="1755459454005" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="276">
-<div class="thumbnail">
-<p><a href="./Sin título/posts/Contornos/index.html" class="no-external"></a></p><a href="./Sin título/posts/Contornos/index.html" class="no-external">
-<p><img loading="lazy" data-src="./Sin título/posts/Contornos/contornos.png" class="thumbnail-image"></p>
-</a><p><a href="./Sin título/posts/Contornos/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./Sin título/posts/Contornos/index.html" class="no-external">Contours with ggplot2</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./Sin título/posts/Contornos/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-</div>
-<div class="listing-description">
-<a href="./Sin título/posts/Contornos/index.html" class="no-external">This is a post with executable code.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./Sin título/posts/Contornos/index.html" class="no-external">
-<div class="listing-date">
-Apr 21, 2022
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="61" data-categories="code" data-listing-date-sort="1650492000000" data-listing-file-modified-sort="1755004143225" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="276">
-<div class="thumbnail">
-<p><a href="./fv/fv/posts/Contornos/index.html" class="no-external"></a></p><a href="./fv/fv/posts/Contornos/index.html" class="no-external">
-<p><img loading="lazy" data-src="./fv/fv/posts/Contornos/contornos.png" class="thumbnail-image"></p>
-</a><p><a href="./fv/fv/posts/Contornos/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./fv/fv/posts/Contornos/index.html" class="no-external">Contours with ggplot2</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./fv/fv/posts/Contornos/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-</div>
-<div class="listing-description">
-<a href="./fv/fv/posts/Contornos/index.html" class="no-external">This is a post with executable code.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./fv/fv/posts/Contornos/index.html" class="no-external">
-<div class="listing-date">
-Apr 21, 2022
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="62" data-categories="code" data-listing-date-sort="1650492000000" data-listing-file-modified-sort="1754748144651" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="276">
-<div class="thumbnail">
-<p><a href="./fv/posts/Contornos/index.html" class="no-external"></a></p><a href="./fv/posts/Contornos/index.html" class="no-external">
-<p><img loading="lazy" data-src="./fv/posts/Contornos/contornos.png" class="thumbnail-image"></p>
-</a><p><a href="./fv/posts/Contornos/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./fv/posts/Contornos/index.html" class="no-external">Contours with ggplot2</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./fv/posts/Contornos/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-</div>
-<div class="listing-description">
-<a href="./fv/posts/Contornos/index.html" class="no-external">This is a post with executable code.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./fv/posts/Contornos/index.html" class="no-external">
-<div class="listing-date">
-Apr 21, 2022
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="63" data-categories="code" data-listing-date-sort="1650492000000" data-listing-file-modified-sort="1690730966846" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="276">
+<div class="quarto-post image-right" data-index="15" data-categories="code" data-listing-date-sort="1650492000000" data-listing-file-modified-sort="1755611375574" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="276">
 <div class="thumbnail">
 <p><a href="./posts/Contornos/index.html" class="no-external"></a></p><a href="./posts/Contornos/index.html" class="no-external">
-<p><img loading="lazy" data-src="./posts/Contornos/contornos.png" class="thumbnail-image"></p>
+<p><img loading="lazy" src="./posts/Contornos/contornos.png" class="thumbnail-image"></p>
 </a><p><a href="./posts/Contornos/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
@@ -2572,118 +872,10 @@ FV
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="64" data-categories="code,analysis" data-listing-date-sort="1648418400000" data-listing-file-modified-sort="1755459454111" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1092">
-<div class="thumbnail">
-<p><a href="./Sin título/posts/emissions/index.html" class="no-external"></a></p><a href="./Sin título/posts/emissions/index.html" class="no-external">
-<p><img loading="lazy" data-src="./Sin título/posts/emissions/image.svg" class="thumbnail-image"></p>
-</a><p><a href="./Sin título/posts/emissions/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./Sin título/posts/emissions/index.html" class="no-external">CO2 emissions, GDP per capita and population by country - 2020</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./Sin título/posts/emissions/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./Sin título/posts/emissions/index.html" class="no-external">This is a post with executable code.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./Sin título/posts/emissions/index.html" class="no-external">
-<div class="listing-date">
-Mar 28, 2022
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="65" data-categories="code,analysis" data-listing-date-sort="1648418400000" data-listing-file-modified-sort="1755004143283" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1092">
-<div class="thumbnail">
-<p><a href="./fv/fv/posts/emissions/index.html" class="no-external"></a></p><a href="./fv/fv/posts/emissions/index.html" class="no-external">
-<p><img loading="lazy" data-src="./fv/fv/posts/emissions/image.svg" class="thumbnail-image"></p>
-</a><p><a href="./fv/fv/posts/emissions/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./fv/fv/posts/emissions/index.html" class="no-external">CO2 emissions, GDP per capita and population by country - 2020</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./fv/fv/posts/emissions/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./fv/fv/posts/emissions/index.html" class="no-external">This is a post with executable code.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./fv/fv/posts/emissions/index.html" class="no-external">
-<div class="listing-date">
-Mar 28, 2022
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="66" data-categories="code,analysis" data-listing-date-sort="1648418400000" data-listing-file-modified-sort="1754748144691" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1092">
-<div class="thumbnail">
-<p><a href="./fv/posts/emissions/index.html" class="no-external"></a></p><a href="./fv/posts/emissions/index.html" class="no-external">
-<p><img loading="lazy" data-src="./fv/posts/emissions/image.svg" class="thumbnail-image"></p>
-</a><p><a href="./fv/posts/emissions/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./fv/posts/emissions/index.html" class="no-external">CO2 emissions, GDP per capita and population by country - 2020</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./fv/posts/emissions/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./fv/posts/emissions/index.html" class="no-external">This is a post with executable code.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./fv/posts/emissions/index.html" class="no-external">
-<div class="listing-date">
-Mar 28, 2022
-</div>
-<div class="listing-author">
-FV
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="67" data-categories="code,analysis" data-listing-date-sort="1648418400000" data-listing-file-modified-sort="1690239546802" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1092">
+<div class="quarto-post image-right" data-index="16" data-categories="code,analysis" data-listing-date-sort="1648418400000" data-listing-file-modified-sort="1755611375664" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1092">
 <div class="thumbnail">
 <p><a href="./posts/emissions/index.html" class="no-external"></a></p><a href="./posts/emissions/index.html" class="no-external">
-<p><img loading="lazy" data-src="./posts/emissions/image.svg" class="thumbnail-image"></p>
+<p><img loading="lazy" src="./posts/emissions/image.svg" class="thumbnail-image"></p>
 </a><p><a href="./posts/emissions/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
@@ -2720,10 +912,9 @@ FV
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-<nav id="listing-pagination" class="listing-pagination" aria-label="Page Navigation">
-  <ul class="pagination"></ul>
-</nav>
 </div></main> <!-- /main -->
+<div class="footer-container">
+</div>
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -3085,25 +1276,64 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         }
       };
     }
-      // Attach click handler to the DT
-      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-      for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
-          const clickedEl = event.target;
-          if (clickedEl !== selectedAnnoteEl) {
-            unselectCodeLines();
-            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-            if (activeEl) {
-              activeEl.classList.remove('code-annotation-active');
-            }
-            selectCodeLines(clickedEl);
-            clickedEl.classList.add('code-annotation-active');
-          } else {
-            // Unselect the line
-            unselectCodeLines();
-            clickedEl.classList.remove('code-annotation-active');
+      const annoteTargets = window.document.querySelectorAll('.code-annotation-anchor');
+      for (let i=0; i<annoteTargets.length; i++) {
+        const annoteTarget = annoteTargets[i];
+        const targetCell = annoteTarget.getAttribute("data-target-cell");
+        const targetAnnotation = annoteTarget.getAttribute("data-target-annotation");
+        const contentFn = () => {
+          const content = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          if (content) {
+            const tipContent = content.cloneNode(true);
+            tipContent.classList.add("code-annotation-tip-content");
+            return tipContent.outerHTML;
           }
-        });
+        }
+        const config = {
+          allowHTML: true,
+          content: contentFn,
+          onShow: (instance) => {
+            selectCodeLines(instance.reference);
+            instance.reference.classList.add('code-annotation-active');
+            window.tippy.hideAll();
+          },
+          onHide: (instance) => {
+            unselectCodeLines();
+            instance.reference.classList.remove('code-annotation-active');
+          },
+          maxWidth: 300,
+          delay: [50, 0],
+          duration: [200, 0],
+          offset: [5, 10],
+          arrow: true,
+          appendTo: function(el) {
+            return el.parentElement.parentElement.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'quarto',
+          placement: 'right',
+          popperOptions: {
+            modifiers: [
+            {
+              name: 'flip',
+              options: {
+                flipVariations: false, // true by default
+                allowedAutoPlacements: ['right'],
+                fallbackPlacements: ['right', 'top', 'top-start', 'top-end', 'bottom', 'bottom-start', 'bottom-end', 'left'],
+              },
+            },
+            {
+              name: 'preventOverflow',
+              options: {
+                mainAxis: false,
+                altAxis: false
+              }
+            }
+            ]        
+          }      
+        };
+        window.tippy(annoteTarget, config); 
       }
   const findCites = (el) => {
     const parentEl = el.parentElement;
@@ -3162,4 +1392,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

@@ -3,12 +3,12 @@ title: "&nbsp;&nbsp;Freddy Villabona C."
 subtitle: "Working as a data scientist at h.security S. L.<br>[Resume](https://docs.google.com/document/d/1tK3Pr6gwD0YipuBWaxsrwVTeCnOuY7V82V6s0LOSIXk/edit?usp=sharing) | [ProgramandoenR](https://freddyvillabona.github.io/fv/programandoenr.html) | R Views<br>Syndicated on [R-Bloggers]() & R Weekly<br><br>**`|> May all dreams come true! :)`**"
 format:
   lumo-html: 
-    logo: "a.jpg"                                     # Optional. Path to a logo displayed above the title
+    logo: "a.jpg"                                         # Optional. Path to a logo displayed above the title
  #   github-repo: "https://github.com/holtzy/lumo"        # Optional. Adds a github corner at the top right
     primary-color: "#2a45b0"
     self-contained: true
-    is-particlejs-enabled: true                          # Optional: display interactive particles in the document header
- #  bg-image: ""                                         # Optional: link to an image for the header background
+    is-particlejs-enabled: true                           # Optional: display interactive particles in the document header
+ #  bg-image: ""                                          # Optional: link to an image for the header background
 about:
     template: jolla
     links:
