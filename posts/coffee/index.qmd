@@ -30,6 +30,11 @@ IT
 ::: 
 *IT* Questo grafico evidenzia i cinque paesi con la più alta produzione di caffè al mondo, tenendo conto di vari parametri di qualità: aroma, sapore, retrogusto, acidità, corposità, equilibrio, uniformità, pulizia della tazza, dolcezza, umidità e difetti.
 
+::: {.callout-important}
+PT
+::: 
+*PT* Questo grafico evidenzia i cinque paesi con la più alta produzione di caffè al mondo, tenendo conto di vari parametri di qualità: aroma, sapore, retrogusto, acidità, corposità, equilibrio, uniformità, pulizia della tazza, dolcezza, umidità e difetti.
+
 ```{r}
 # LIBRARIES
 library(tidyverse)
