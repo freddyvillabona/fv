@@ -14,6 +14,8 @@ This chart highlights the five countries with the highest coffee production in t
 
 En este gráfico destacan los cinco países con mayor producción de café en el mundo, tomando en cuenta varias medidas de calidad: aroma, sabor, regusto, acidez, cuerpo, balance, uniformidad, limpieza de la taza, dulzura, humedad y defectos.
 
+Questo grafico evidenzia i cinque paesi con la più alta produzione di caffè al mondo, tenendo conto di vari parametri di qualità: aroma, sapore, retrogusto, acidità, corposità, equilibrio, uniformità, pulizia della tazza, dolcezza, umidità e difetti.
+
 ```{r}
 # LIBRARIES
 library(tidyverse)
