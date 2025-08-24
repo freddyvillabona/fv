@@ -10,10 +10,13 @@ categories: [code, analysis]
 image: "cafe1.png"
 ---
 
+
 ::: {.callout-important}
 EN
 ::: 
 
+
+ 
 This chart highlights the five countries with the highest coffee production in the world, taking into account various quality measures: aroma, flavor, aftertaste, acidity, body, balance, uniformity, cup cleanliness, sweetness, moisture, and defects.
 
 ::: {.callout-important}
