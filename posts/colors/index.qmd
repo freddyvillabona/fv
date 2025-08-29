@@ -3,14 +3,14 @@ execute:
   message: false
   warning: false
   fig-show: no
-title: "colores"
+title: "Percpfión de los colores - Resultados gráficos de encuesta Xkcd"
 author: "FV"
 date: "2025-09-29"
 categories: [code, analysis]
 image: "colors.png"
 ---
 
-Colores
+La encuesta de colores de XKCD, realizada por Randall Munroe en 2010, pidió a cientos de miles de participantes que nombraran colores RGB mostrados en pantalla. Con más de 5 millones de nombres recopilados en 222,500 sesiones, se generó una lista de 954 colores con nombres únicos, como “ugly purple” o “vomit yellow”. Los resultados están disponibles en xkcd.com/color/rgb/ y como datos crudos en un archivo SQLite (84 MB). Aunque la encuesta original ya no está activa, puedes explorarla por diversión en el enlace del blog de XKCD. Los colores tienen prefijo “xkcd:” para diferenciarlos de nombres estándar como los de X11/CSS4. Por ejemplo, “xkcd:blue” es #0343DF, mientras que “blue” es #0000FF.
 
 ```{r}
 
