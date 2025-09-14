@@ -78,7 +78,8 @@
     "index.html": "6532e218"
   },
   "notes.qmd": {
-    "notes.html": "c2109a24"
+    "notes.html": "c2109a24",
+    "notes.md": "9847ac02"
   },
   "notes/d/index.qmd": {
     "index.html": "617c1703"
@@ -422,5 +423,11 @@
   },
   "posts/oil/index.qmd": {
     "index.html": "a484e6fa"
+  },
+  "TidyTuesday/tidytuesday/not.qmd": {
+    "not.html": "b5260801"
+  },
+  "posts/dogs/index.qmd": {
+    "index.html": "f7ffc12f"
   }
 }
