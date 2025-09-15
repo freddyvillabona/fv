@@ -1,0 +1,17 @@
+{
+  "hash": "f74bf83cb3ea1dd7bef730710dfaaf88",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\nexecute:\n  message: false\n  warning: false\n  fig-show: no\ntitle: \"Monthly sales of an online shop in the UK 🇬🇧\"\nauthor: \"FV\"\ndate: \"2023-05-01\"\ncategories: [code, map]\nimage: \"uk.png\"\n---\n\n\n\n\n\n\nMap of the United Kingdom drawn from a shapefile layer. This is a post with executable code.\n\n\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# LIB\n\nlibrary(\"dplyr\")\nlibrary(\"ggplot2\")\nlibrary(\"sf\")\nlibrary(\"ggtext\")\n\n# UK SHAPEFILE\nuk <- read_sf('uk/uk_shapefile.shp')\nuk <- uk %>% \n  st_as_sf()\n\n# DATA (CSV)\ndata <- read.csv2(\"data.csv\")\n\n# (SHAPEFILE AND DATOS)\nmap_uk <- merge(uk, data, by = \"Region\")\nmap_uk <- map_uk %>% \n  st_as_sf()\n\n# COLORS\npal <- colorRampPalette(c(\"#ffffcc\", \"#c7e9b4\", \"#7fcdbb\", \n           \"#41b6c4\", \"#2c7fb8\"))(12)\n\n# MAP1\n\n ggplot(data = map_uk) +\n  xlab(\"\") +\n  ylab(\"\") +\n  geom_sf(aes(fill=Mean), show.legend = T, size = 0.05, lwd = 0) +\n  scale_fill_gradientn(colours = pal) +\n  geom_sf_text(aes(label =Region),size=2.5, colour=\"black\")+\n   theme(plot.title = element_text(size = 20, face=\"bold\", hjust = 0.5),\n         plot.subtitle = element_text(size = 16, face=\"bold\", hjust = 0.5),\n         plot.caption = element_text(size = 10, face=\"bold\", hjust = 1)) +\n   labs(title=\"Sales per month \", \n        subtitle = \"\\nUK\",\n        caption = \"Data: uml - 2023\",\n        fill= \"Ventas\") \n```\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n\n```{.r .cell-code}\n# MAP2\n \n ggplot(data = map_uk) +\n  xlab(\"\") +\n  ylab(\"\") +\n  geom_sf(aes(fill=Mean), show.legend = T, size = 0.05, lwd = 0) +\n  scale_fill_gradientn(colours = pal) +\n  geom_sf_text(aes(label =Region),size=2.5, colour=\"black\")+\n  theme_void() +\n   theme(plot.title = element_text(size = 20, face=\"bold\", hjust = 0.5),\n         plot.subtitle = element_text(size = 16, face=\"bold\", hjust = 0.5),\n         plot.caption = element_text(size = 10, face=\"bold\", hjust = 1)) +\n   labs(title=\"Sales per month \", \n        subtitle = \"\\nUK\",\n        caption = \"Data: uml - 2023\",\n        fill= \"Ventas\") \n```\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-1-2.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

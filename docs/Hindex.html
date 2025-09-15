@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>hindex – Fredd Villabona</title>
+<title>hindex – |&gt;</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -75,16 +75,15 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-DSTHFZLFYC', { 'anonymize_ip': true});
 </script>
-<style>html{ scroll-behavior: smooth; }</style>
 
 
-<link rel="stylesheet" href="site_libs/quarto-contrib/quarto-project/holtzy/lumo/style.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -92,7 +91,7 @@ gtag('config', 'G-DSTHFZLFYC', { 'anonymize_ip': true});
     <img src="./files/logo.jpg" alt="" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Fredd Villabona</span>
+    <span class="navbar-title">|&gt;</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -108,6 +107,10 @@ gtag('config', 'G-DSTHFZLFYC', { 'anonymize_ip': true});
   <li class="nav-item">
     <a class="nav-link" href="./programandoenr.html"> 
 <span class="menu-text">📊 programandoenR</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./intrusionsystems.html"> 
+<span class="menu-text">🚨 Intrusion Systems</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./notes.html"> 
@@ -127,7 +130,7 @@ gtag('config', 'G-DSTHFZLFYC', { 'anonymize_ip': true});
     
 <!-- main -->
 <div class="quarto-about-jolla">
- <main class="content quarto-banner-title-block" id="quarto-document-content">
+ <main class="content" id="quarto-document-content">
 <section id="section" class="level4">
 <h4 data-anchor-id="section"><img src="a.jpg" class="img-fluid" width="200"></h4>
 </section>
@@ -170,11 +173,12 @@ gtag('config', 'G-DSTHFZLFYC', { 'anonymize_ip': true});
   <a href="mailto:freddyvillabonac@gmail.com" class="about-link" rel="" target="">
      <span class="about-link-text">Email</span>
   </a>
+  <a href="https://www.linkedin.com/in/freddvillabona/" class="about-link" rel="" target="">
+     <span class="about-link-text">linKedin</span>
+  </a>
 </div>
 </div>
  <!-- /main -->
-<div class="footer-container">
-</div>
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -529,64 +533,25 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         }
       };
     }
-      const annoteTargets = window.document.querySelectorAll('.code-annotation-anchor');
-      for (let i=0; i<annoteTargets.length; i++) {
-        const annoteTarget = annoteTargets[i];
-        const targetCell = annoteTarget.getAttribute("data-target-cell");
-        const targetAnnotation = annoteTarget.getAttribute("data-target-annotation");
-        const contentFn = () => {
-          const content = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-          if (content) {
-            const tipContent = content.cloneNode(true);
-            tipContent.classList.add("code-annotation-tip-content");
-            return tipContent.outerHTML;
-          }
-        }
-        const config = {
-          allowHTML: true,
-          content: contentFn,
-          onShow: (instance) => {
-            selectCodeLines(instance.reference);
-            instance.reference.classList.add('code-annotation-active');
-            window.tippy.hideAll();
-          },
-          onHide: (instance) => {
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
             unselectCodeLines();
-            instance.reference.classList.remove('code-annotation-active');
-          },
-          maxWidth: 300,
-          delay: [50, 0],
-          duration: [200, 0],
-          offset: [5, 10],
-          arrow: true,
-          appendTo: function(el) {
-            return el.parentElement.parentElement.parentElement;
-          },
-          interactive: true,
-          interactiveBorder: 10,
-          theme: 'quarto',
-          placement: 'right',
-          popperOptions: {
-            modifiers: [
-            {
-              name: 'flip',
-              options: {
-                flipVariations: false, // true by default
-                allowedAutoPlacements: ['right'],
-                fallbackPlacements: ['right', 'top', 'top-start', 'top-end', 'bottom', 'bottom-start', 'bottom-end', 'left'],
-              },
-            },
-            {
-              name: 'preventOverflow',
-              options: {
-                mainAxis: false,
-                altAxis: false
-              }
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
             }
-            ]        
-          }      
-        };
-        window.tippy(annoteTarget, config); 
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
       }
   const findCites = (el) => {
     const parentEl = el.parentElement;
@@ -631,7 +596,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Built with <a href="https://quarto.org/">Quarto</a></p>
+<p>Built with Quarto</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
@@ -645,5 +610,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
