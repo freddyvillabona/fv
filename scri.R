@@ -109,6 +109,7 @@ if(!require('rayshader')) {
 }
 
 
+
 montereybay %>%
   sphere_shade() %>%
   plot_3d(montereybay,zscale=50,zoom=0.6,theta=-90) render_snapshot()
