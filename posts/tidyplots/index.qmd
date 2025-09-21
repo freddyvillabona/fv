@@ -8,14 +8,12 @@ author: "FV"
 date: "2025-09-21"
 categories: [code, analysis]
 image: "tidyplot.png"
+editor: 
+  markdown: 
+    wrap: 72
 ---
 
-
-Aumento de precios de la gasolina en EE.UU.
-
-
-Precios medios semanales de la gasolina al por menor. Gasolina de grado regular.. 1990 - 2025.
-
+TIDYPLOTS
 
 ```{r}
 
@@ -23,57 +21,33 @@ Precios medios semanales de la gasolina al por menor. Gasolina de grado regular.
 
 library(data.table)
 library(tidyplots)
+```
 
-
+```{r}
 study |> 
   tidyplot(x = treatment, y = score, color = treatment) |> 
   add_mean_bar(alpha = 0.4) |> 
   add_sem_errorbar() |> 
   add_data_points_beeswarm() 
+```
 
-
-library("tidyverse")
-
-diamonds <- data(diamonds)
-
-diamonds <- data.table(diamonds)
-
-diamonds <- as.data.frame(diamonds)
-
-
-
+```{r}
 energy |> 
   tidyplot(x = year, y = energy, color = energy_source) |> 
   add_barstack_absolute() |> 
   adjust_legend_title("FUENTES DE ENERGÍA") |> 
   view_plot(title = "FUENTES DE ENERGÍA GLOBALES")
+```
 
-
-
+```{r}
 energy_week |> 
   tidyplot(x = date, y = power, color = energy_source) |> 
   add_areastack_relative() |> 
   adjust_y_axis_title("PODER DE IMPACTO (%)") |>
   adjust_legend_title("FUENTES DE ENERGÍA") |> 
   view_plot(title = "FUENTES DE ENERGÍA GLOBALES - Septiembre 2023")
-
-
-
-
-energy |> 
-  dplyr::filter(year %in% c(2005, 2010, 2015, 2020)) |> 
-  tidyplot(y = energy, color = energy_source) |> 
-  add_donut() |> 
-  adjust_size(width = 25, height = 25) |>
-  split_plot(by = year) |>
-  add_title(title = "FUENTES GLOBALES DE ENERGÍA")
-
-
-climate |>
-  tidyplot(x = month, y = year, color = max_temperature) |>
-  add_heatmap() |>
-  add_title(title = "CAMBIOS GLOBALES DEL CLIMA (1900-2025)")
-
 ```
 
-![](oil1.png)
+\`\`\`
+
+![](tidyplot.png)
