@@ -429,5 +429,8 @@
   },
   "posts/dogs/index.qmd": {
     "index.html": "f7ffc12f"
+  },
+  "posts/tidyplots/index.qmd": {
+    "index.html": "82f74d3d"
   }
 }
