@@ -31,7 +31,7 @@ about:
       
     - text: Email
       href: mailto:freddyvillabonac@gmail.com
-<<<<<<< HEAD
+
 
     - text: linKedin
       href: https://www.linkedin.com/in/freddvillabona/
