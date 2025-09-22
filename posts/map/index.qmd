@@ -1,0 +1,67 @@
+---
+execute:
+  message: false
+  warning: false
+  fig-show: no
+title: "MAPBOX"
+author: "FV"
+date: "2025-09-22"
+categories: [code, analysis]
+image: "tidyplot.png"
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+MAPBOX
+
+```{r}
+library(mapboxer)
+library("tidyverse")
+```
+
+```{r}
+library(mapboxer)
+
+# Create a source
+motor_vehicle_collisions_nyc %>%
+  dplyr::mutate(color = ifelse(injured > 0, "red", "yellow")) %>%
+  as_mapbox_source(lng = "lng", lat = "lat") %>%
+  # Setup a map with the default source above
+  mapboxer(
+    center = c(-73.9165, 40.7114),
+    zoom = 10
+  ) %>%
+  # Add a navigation control
+  add_navigation_control() %>%
+  # Add a layer styling the data of the default source
+  add_circle_layer(
+    circle_color = c("get", "color"),
+    circle_radius = 3,
+    # Use a mustache template to add popups to the layer
+    popup = "Number of persons injured: {{injured}}"
+  )
+
+```
+
+
+```{r}  
+  mapboxer(
+    center = c(-73.9165, 40.7114),
+    zoom = 10
+  ) %>%
+  # Add a navigation control
+  add_navigation_control() %>%
+  # Add a layer styling the data of the default source
+  add_circle_layer(
+    circle_color = c("get", "color"),
+    circle_radius = 3,
+    # Use a mustache template to add popups to the layer
+    popup = "Number of persons injured: {{injured}}"
+  )
+
+```
+
+\`\`\`
+
+![](tidyplot.png)

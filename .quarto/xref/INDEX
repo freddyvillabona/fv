@@ -432,5 +432,8 @@
   },
   "posts/tidyplots/index.qmd": {
     "index.html": "82f74d3d"
+  },
+  "posts/map/index.qmd": {
+    "index.html": "3a83d7e4"
   }
 }
