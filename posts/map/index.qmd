@@ -46,19 +46,26 @@ motor_vehicle_collisions_nyc %>%
 
 
 ```{r}  
-  mapboxer(
-    center = c(-73.9165, 40.7114),
-    zoom = 10
-  ) %>%
-  # Add a navigation control
-  add_navigation_control() %>%
-  # Add a layer styling the data of the default source
-  add_circle_layer(
-    circle_color = c("get", "color"),
-    circle_radius = 3,
-    # Use a mustache template to add popups to the layer
-    popup = "Number of persons injured: {{injured}}"
-  )
+library(plotly)
+
+us_cities = read.csv("https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv")
+
+fig <- us_cities 
+fig <- fig %>%
+  plot_ly(
+    lat = ~lat,
+    lon = ~lon,
+    marker = list(color = "fuchsia"),
+    type = 'scattermapbox',
+    hovertext = us_cities[,"City"]) 
+fig <- fig %>%
+  layout(
+    mapbox = list(
+      style = 'open-street-map',
+      zoom =2.5,
+      center = list(lon = -88, lat = 34))) 
+
+fig
 
 ```
 
