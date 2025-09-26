@@ -5,8 +5,8 @@ execute:
   fig-show: no
 title: "MAPBOX"
 author: "FV"
-date: "2025-09-22"
-categories: [code, analysis]
+date: "2025-09-26"
+categories: [code, analysis,map]
 image: "tidyplot.png"
 editor: 
   markdown: 
