@@ -35,5 +35,8 @@ about:
 
     - text: linKedin
       href: https://www.linkedin.com/in/freddvillabona/
+      
+    - text: Bluesky
+      href: https://bsky.app/profile/freddvillabona.bsky.social
 ---
 
