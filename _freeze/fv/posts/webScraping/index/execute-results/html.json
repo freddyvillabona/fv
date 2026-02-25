@@ -1,0 +1,15 @@
+{
+  "hash": "e74dbd367bfa217e00fa79ab667a99e7",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\nexecute:\n  message: false\n  warning: false\n  fig-show: no\ntitle: \"Web Scraping con rvest\"\nauthor: \"FV\"\ndate: \"2024-09-22\"\ncategories: [code, analysis]\nimage: \"ws.png\"\n---\n\n\n\n\n\nEsta vez se trabaja con el paquete ”rvest” y la intención es obtener un marco de datos de Wikipedia. \n\n- En primer lugar se obtienen datos de la URL asignada, posteriormente se seleccionan los datos deseados: se seleccionan viables, se filtran elementos, se ordenan posiciones, se cambian nombres de variables, se cambian tipos de datos… \n- La finalidad de trabajar con este paquete es obtener y ordenar datos rápidamente para estudios específicos.  \n- Manipulación de datos con \"dplyr\".\n\n\n\n\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# Librerías \nlibrary(\"dplyr\")\nlibrary(\"rvest\")\nlibrary(\"showtext\")\n\n# URL\nwebpage <- read_html(\"https://es.wikipedia.org/wiki/Anexo:Municipios_de_Espa%C3%B1a_por_poblaci%C3%B3n\")\n\n# Se obtiene los datos de la URL:\nt <- webpage %>%\n  html_nodes(\".mw-parser-output\") %>%\n  html_table()  \nt <- t[[1]] \n\n# Se seleccionan los elementos deseados:\nt <- t[(8:31),] \n\n# Se seleccionan variables y se cambian los nombres:\nt1 <- select(t, 2:5)\nvariables <- c(\"Nombre\", \"Población\", \"Provincia\", \"Comunidad Autónoma\")\nnames(t1) = c(variables)\nt1\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n# A tibble: 24 × 4\n   Nombre                     Población Provincia           `Comunidad Autónoma`\n   <chr>                      <chr>     <chr>               <chr>               \n 1 Murcia                     474 617   Región de Murcia R… Región de Murcia Re…\n 2 Palma de Mallorca          431 521   Islas Baleares Isl… Islas Baleares Isla…\n 3 Las Palmas de Gran Canaria 380 436   Las PalmasLas Palm… Canarias Canarias   \n 4 Alicante                   358 720   AlicanteAlicante    Comunidad Valencian…\n 5 Bilbao                     348 089   Vizcaya Vizcaya     País Vasco País Vas…\n 6 Córdoba                    322 811   Córdoba Córdoba     Andalucía Andalucía \n 7 Valladolid                 300 618   Valladolid Vallado… Castilla y León Cas…\n 8 Vigo                       293 977   Pontevedra Ponteve… Galicia Galicia     \n 9 Hospitalet de Llobregat    279 993   Barcelona Barcelona Cataluña Cataluña   \n10 Gijón                      268 561   Principado de Astu… Principado de Astur…\n# ℹ 14 more rows\n```\n\n\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

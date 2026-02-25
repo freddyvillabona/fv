@@ -1,0 +1,53 @@
+---
+execute:
+  message: false
+  warning: false
+  fig-show: no
+title: "TIDYPLOTS"
+author: "FV"
+date: "2025-09-21"
+categories: [code, analysis]
+image: "tidyplot.png"
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+TIDYPLOTS
+
+```{r}
+
+
+
+library(data.table)
+library(tidyplots)
+```
+
+```{r}
+study |> 
+  tidyplot(x = treatment, y = score, color = treatment) |> 
+  add_mean_bar(alpha = 0.4) |> 
+  add_sem_errorbar() |> 
+  add_data_points_beeswarm() 
+```
+
+```{r}
+energy |> 
+  tidyplot(x = year, y = energy, color = energy_source) |> 
+  add_barstack_absolute() |> 
+  adjust_legend_title("FUENTES DE ENERGÍA") |> 
+  view_plot(title = "FUENTES DE ENERGÍA GLOBALES")
+```
+
+```{r}
+energy_week |> 
+  tidyplot(x = date, y = power, color = energy_source) |> 
+  add_areastack_relative() |> 
+  adjust_y_axis_title("PODER DE IMPACTO (%)") |>
+  adjust_legend_title("FUENTES DE ENERGÍA") |> 
+  view_plot(title = "FUENTES DE ENERGÍA GLOBALES - Septiembre 2023")
+```
+
+\`\`\`
+
+![](tidyplot.png)

@@ -1,0 +1,17 @@
+{
+  "hash": "13198e8ecd69925c94969d3ccae915cd",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\nexecute:\n  message: false\n  warning: false\n  fig-show: no\ntitle: \"Boxplot (data:diamonds)\"\nauthor: \"FV\"\ndate: \"2023-05-27\"\ncategories: [code, analysis]\nimage: \"d.png\"\n---\n\n\n\n\n\nThis time we work with diamond data. It generates a diagram of box with \"ggplot2\", with various details in the chart that allow better perceive the distribution of data.\n\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(\"ggplot2\")\ndata(diamonds)\n\n\n  ggplot(data = diamonds, aes(x = cut, y = price)) +\n    scale_fill_manual (values = c(\"#d53e4f\",\n                                \"#f46d43\", \"#66c2a5\", \"#3288bd\", \"#9970ab\")) +\n    scale_color_manual(values = c(\"#d53e4f\", \"#f46d43\",\n                                \"#66c2a5\", \"#3288bd\",\n                                \"#9970ab\")) +\n    geom_jitter(aes(color = cut), size = .01, alpha = 0.4, show.legend = FALSE) +\n    geom_violin(aes(fill = cut), alpha = 0.5, color = NA) + \n    geom_boxplot(aes(color = cut), alpha = 0.5, show.legend = FALSE) +\n    xlab(\"\\nCut\") +\n    ylab(\"Price\") +\n    labs(title=\"\\nDiamonds\", subtitle =\"\", caption = \"Data: diamonds\\n\", fill= \"Cut\") +\n    \n    theme(\n      axis.text.x = element_text(size = 12),\n      axis.text.y = element_text (size = 12),\n      axis.title.x = element_text (size = 13, face=\"bold\"),\n      axis.title.y = element_text(size = 13, face=\"bold\"),\n      panel.spacing = unit(0, \"pt\"),\n      panel.border = element_blank(),\n      panel.grid.major.x = element_blank(),\n      strip.background = element_blank(),\n      strip.text = element_text(colour = \"black\"),\n      legend.justification = c(\"right\", \"top\"),\n      legend.box.just = \"right\",\n      legend.margin = margin(6, 6, 6, 6),\n      plot.title = element_text(size = 20, face = \"bold\", hjust = 0.5),\n      plot.subtitle = element_text(size = 16, face = \"bold\", hjust = 0.5),\n      plot.caption = element_text(size = 10, face = \"bold\", hjust = 1),\n      panel.background = element_rect(fill=\"white\", colour=\"white\")\n)\n```\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

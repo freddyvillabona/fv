@@ -1,0 +1,17 @@
+{
+  "hash": "eb0603f7944274046ea5313678a5f56b",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\nexecute:\n  message: false\n  warning: false\n  fig-show: no\ntitle: \"Percentage of Russian speakers in Ukraine 🇺🇦\"\nauthor: \"FV\"\ndate: \"2023-01-11\"\ncategories: [code, analysis, map]\nimage: \"img.png\"\n---\n\n\n\n\n\nWorking with the libraries: \"sf\", \"stringr\", \"dplyr\", \"ggplot2\" and \"ggthemes\".\n\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# lIB\n\n{\nlibrary('sf')\nlibrary(\"ggplot2\")\nlibrary(\"dplyr\")\nlibrary(\"stringr\")\n}\n\nru <- read_sf('ruso/Ruso_Parlantes_Ucrania.shp')\n\nru <- ru %>% \n  st_as_sf()\n\nA <- ggplot(data = ru) +\n  ggtitle(\"Україна - Відсоток російськомовних\") +\n  xlab(\"\") +\n  ylab(\"\") +\n  geom_sf(aes(fill=PorcRus), show.legend = T, size = 0.05) +\n  scale_fill_viridis_c(alpha = .6) +\n  geom_sf_text(aes(label =Ucraniano),size=3,family=\"sans\")+\n  theme(plot.title = element_text(size = 16),\n        plot.subtitle = element_text(size = 20)) +\n  labs(fill= \"Відсоток\")\n\nA\n```\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n\n```{.r .cell-code}\nlibrary(\"ggspatial\")\n\nru$Español <- gsub(\"Ciudad de Kiev\",\"Kiev \",ru$Español)\nru$Español <- gsub(\"República Autónoma de Crimea\",\"Crimea\",ru$Español)\n\nes <- ggplot(data = ru) +\n  ggtitle(\"Percentage of Russian speakers in Ukraine\") +\n  xlab(\"\") +\n  ylab(\"\") +\n  geom_sf(aes(fill=PorcRus), show.legend = T, size = 0.05) +\n  scale_fill_viridis_c(alpha = .6, direction = -1) +\n  geom_sf_text(aes(label =Español),size=3,family=\"sans\")+\n  theme(plot.title = element_text(size = 20, face = \"bold\"),\n        plot.subtitle = element_text(size = 20),\n        legend.position=\"bottom\") +\n  labs(fill= \"%\") +\n  annotation_scale()\n\nes \n```\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-1-2.png){width=672}\n:::\n:::\n\n\n\n\n\nShapefile layers 2019 Data: gov.uk\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

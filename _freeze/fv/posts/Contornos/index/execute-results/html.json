@@ -1,0 +1,17 @@
+{
+  "hash": "6bb22355cbe2a4aca5a633c878e8c8ec",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\nexecute:\n  message: false\n  warning: false\n  fig-show: no\ntitle: \"Contours with ggplot2\"\nauthor: \"FV\"\ndate: \"2022-04-21\"\ncategories: [code]\nimage: \"contornos.png\"\n---\n\n\n\n\n\nThis is a post with executable code.\n\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(\"ggplot2\")\n\nsegmentos = data.frame(\n  x= c(1.5, 1.5, 1.5),\n  xend = c(1.7, 1.7, 1.7),\n  y = c(90, 93, 96), \n  yend = c(90, 93, 96))\n\nsegmentos2 = data.frame(\n  y = c(50,50,50), \n  yend = c(50,50,50),\n  x= c(4, 4.5, 5),\n  xend = c(4.5, 5, 5.5))\n\nlista <- colorRampPalette(c(\"white\", \"blue\", \"red\"))(75)\n\n  ggplot(faithful, aes(x = eruptions, y = waiting)) +\n    geom_point(size=.5) +\n    xlim(0.5, 6) +\n    ylim(40, 110) +\n    geom_density_2d_filled(alpha = 0.8, bins=75) +\n    scale_fill_manual(values = lista) +\n    \n    geom_segment(data=segmentos, mapping=aes(x=x, xend=xend, y=y, yend=yend), color= c(\"#EEEEFE\", \"#5356f6\", \"#D2565E\"), linewidth=5) +\n    geom_segment(data=segmentos2, mapping=aes(x=x, xend=xend, y=y, yend=yend), color= c(\"#EEEEFE\", \"#5356f6\", \"#D2565E\"), linewidth=3) +\n    geom_text(mapping=aes(label=\"Contornos con ggplot2\", y=(110), x=3), size=6, color=\"black\", fontface=\"bold\") +\n    \n    geom_text(mapping=aes(label=\"C\", y=(90), x=1.8), size=3, color=\"black\") +\n    geom_text(mapping=aes(label=\"B\", y=(93), x=1.8), size=3, color=\"black\") +\n    geom_text(mapping=aes(label=\"A\", y=(96), x=1.8), size=3, color=\"black\") +\n    \n    geom_text(mapping=aes(label=\"0\", y=(48), x=4), size=3, color=\"black\") +\n    geom_text(mapping=aes(label=\"0.00972\", y=(48), x=4.75), size=3, color=\"black\") +\n    geom_text(mapping=aes(label=\"0.01944\", y=(48), x=5.35), size=3, color=\"black\") +\n  \n    theme(\n      legend.position = \"none\",\n      plot.background=element_rect(fill=\"white\", color=\"white\"),\n      panel.background = element_rect(fill=\"white\", color=\"white\"),\n      axis.ticks=element_blank(),\n      axis.title.x=element_blank(),\n      axis.text.x = element_blank(),\n      axis.title.y=element_blank(),\n      axis.text.y = element_blank()\n    )\n```\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

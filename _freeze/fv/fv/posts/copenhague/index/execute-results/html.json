@@ -1,0 +1,17 @@
+{
+  "hash": "cebc28075314e2adf66b1839b96abe7f",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\nexecute:\n  message: false\n  warning: false\n  fig-show: no\ntitle: \"Temperatura media en Copenhague, Dinamarca\"\nauthor: \"FV\"\ndate: \"2024-05-26\"\ncategories: [code, analysis]\nimage: \"copenhague.png\"\n---\n\n\n\n\n\n\nDatos: climate_CPH (1995-2019)\n\n\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\n{\nlibrary(\"tidyverse\")\nlibrary(\"ggthemes\")\nlibrary(\"ggHoriPlot\")\nlibrary(\"showtext\")\nlibrary(\"ggtext\")\n}\n\nutils::data(climate_CPH)\n\ncutpoints <- climate_CPH  %>% \n  mutate(\n    outlier = between(\n      AvgTemperature, \n      quantile(AvgTemperature, 0.25, na.rm=T)-1.5*IQR(AvgTemperature, na.rm=T),\n      quantile(AvgTemperature, 0.75, na.rm=T)+1.5*IQR(AvgTemperature, na.rm=T))) %>% \n  filter(outlier)\n\nori <- sum(range(cutpoints$AvgTemperature))/2\nsca <- seq(range(cutpoints$AvgTemperature)[1], range(cutpoints$AvgTemperature)[2], length.out = 7)[-4]\n\n\n# fonts\nfont_add_google(\"Luckiest Guy\",\"ramp\")\nfont_add_google(\"Bebas Neue\",\"beb\")\nfont_add_google(\"Fira Sans\",\"fira\")\nfont_add_google(\"Raleway\",\"ral\")\nfont_add_google(\"Bitter\",\"bit\")\nshowtext_auto()\n\nplot <-  ggplot(data = climate_CPH) +\n  geom_horizon(aes(date_mine, \n                   AvgTemperature,\n                   fill = ..Cutpoints..), \n               origin = ori, horizonscale = sca) +\n  scale_fill_manual(values = c(\"#5A101C\",\"#BF4149\",\"#f1d2ce\",\"#CDE1F0\",\"#4C8BBF\",\"#102F63\") ) +\n  facet_grid(Year~., switch = \"y\", scales = \"free\", space = \"free\") +\n  theme_few() +\n  \n  theme(\n    text = element_text(family = \"fira\"),\n    panel.spacing.y=unit(0, \"lines\"),\n    strip.text.y.left = element_text(size = 16, angle = 0) ,\n    axis.text.y = element_blank(),\n    axis.title.y = element_blank(),\n    axis.ticks.y = element_blank(),\n    panel.border = element_blank(),\n    plot.title = element_text(size=30),\n    legend.position = \"bottom\",\n    axis.text=element_text(size=16),\n    legend.text = element_text(size=16),\n    legend.title = element_text(size=16)\n  ) +\n  scale_x_date(expand=c(0,0), \n               date_breaks = \"1 month\", \n               date_labels = \"%b\") +\n  xlab('\\n') +\n  ggtitle('\\nTemperatura media en Copenhague, Dinamarca\\n (1995 - 2019)', \n          '\\n') +\n  guides(fill=guide_legend(title=\"Temperatura °C\"))\n\n#plot\n```\n:::\n\n\n\n\n\n\n![](copenhague.png)\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

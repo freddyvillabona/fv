@@ -1,0 +1,17 @@
+{
+  "hash": "81c0807c232d08b1d0615d7dfacbcdff",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\nexecute:\n  message: false\n  warning: false\n  fig-show: no\ntitle: \"TIDYPLOTS\"\nauthor: \"FV\"\ndate: \"2025-09-21\"\ncategories: [code, analysis]\nimage: \"tidyplot.png\"\neditor: \n  markdown: \n    wrap: 72\n---\n\n\n\nTIDYPLOTS\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(data.table)\nlibrary(tidyplots)\n```\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\nstudy |> \n  tidyplot(x = treatment, y = score, color = treatment) |> \n  add_mean_bar(alpha = 0.4) |> \n  add_sem_errorbar() |> \n  add_data_points_beeswarm() \n```\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\nenergy |> \n  tidyplot(x = year, y = energy, color = energy_source) |> \n  add_barstack_absolute() |> \n  adjust_legend_title(\"FUENTES DE ENERGÍA\") |> \n  view_plot(title = \"FUENTES DE ENERGÍA GLOBALES\")\n```\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-3-1.png){width=672}\n:::\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\nenergy_week |> \n  tidyplot(x = date, y = power, color = energy_source) |> \n  add_areastack_relative() |> \n  adjust_y_axis_title(\"PODER DE IMPACTO (%)\") |>\n  adjust_legend_title(\"FUENTES DE ENERGÍA\") |> \n  view_plot(title = \"FUENTES DE ENERGÍA GLOBALES - Septiembre 2023\")\n```\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\n\n\n\\`\\`\\`\n\n![](tidyplot.png)\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

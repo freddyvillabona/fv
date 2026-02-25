@@ -1,14 +1,14 @@
 ---
 title: "&nbsp;&nbsp;Freddy Villabona C."
-subtitle: "Working as a data scientist at Boluda S. L.<br>[Resume](https://docs.google.com/document/d/1tK3Pr6gwD0YipuBWaxsrwVTeCnOuY7V82V6s0LOSIXk/edit?usp=sharing) | [ProgramandoenR](https://freddyvillabona.github.io/fv/programandoenr.html) | R Views<br>Syndicated on [R-Bloggers]() & R Weekly<br><br>**`|> May all dreams come true! :)`**"
+subtitle: "Working as a data scientist at h.security S. L.<br>[Resume](https://docs.google.com/document/d/1tK3Pr6gwD0YipuBWaxsrwVTeCnOuY7V82V6s0LOSIXk/edit?usp=sharing) | [ProgramandoenR](https://freddyvillabona.github.io/fv/programandoenr.html) | R Views<br>Syndicated on [R-Bloggers]() & R Weekly<br><br>**`|> May all dreams come true! :)`**"
 format:
   lumo-html: 
-    logo: "a.jpg"                                     # Optional. Path to a logo displayed above the title
+    logo: "a.jpg"                                         # Optional. Path to a logo displayed above the title
  #   github-repo: "https://github.com/holtzy/lumo"        # Optional. Adds a github corner at the top right
     primary-color: "#2a45b0"
     self-contained: true
-    is-particlejs-enabled: true                          # Optional: display interactive particles in the document header
- #  bg-image: ""                                         # Optional: link to an image for the header background
+    is-particlejs-enabled: true                           # Optional: display interactive particles in the document header
+ #  bg-image: ""                                          # Optional: link to an image for the header background
 about:
     template: jolla
     links:
@@ -32,6 +32,15 @@ about:
     - text: Email
       href: mailto:freddyvillabonac@gmail.com
 
+<<<<<<< HEAD
     - text: LinKedIn
+=======
+
+    - text: linKedin
+>>>>>>> 910c253bd2df496918f83054a31edcb0e68e175d
       href: https://www.linkedin.com/in/freddvillabona/
+      
+    - text: Bluesky
+      href: https://bsky.app/profile/freddvillabona.bsky.social
 ---
+
