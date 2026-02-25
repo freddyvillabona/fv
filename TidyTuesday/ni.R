@@ -100,9 +100,8 @@ social <- nrBrand::social_caption(
 
 
 title <- "¿Qué edad tienen los ajedrecistas titulados?"
-st <- "Gran maestro es el título más alto que puede alcanzar un jugador de ajedrez, aparte del de campeón del mundo. Una vez obtenido, el título se mantiene de por vida, a menos que se revoque por hacer trampa. El título de gran maestro, junto con los títulos menores de la FIDE de maestro internacional, maestro de la FIDE y maestro candidato, está abierto a todos los jugadores, independientemente de su género. Sin embargo, existe el título de *gran maestra*, con requisitos menos estrictos, que se otorga solo a las mujeres, junto con los equivalentes para los 
-
-Traducción realizada con la versión gratuita del traductor DeepL.com"
+st <- "Gran maestro es el título más alto que puede alcanzar un jugador de ajedrez, aparte del de campeón del mundo. Una vez obtenido, el título se mantiene de por vida, a menos que se revoque por hacer trampa. El título de gran maestro, junto con los títulos menores de la FIDE de maestro internacional, maestro de la FIDE y maestro candidato, está abierto a todos los jugadores, independientemente de su género. Sin embargo, existe el título de *gran maestra*, con requisitos menos estrictos, que se otorga solo a las mujeres, junto con los equivalentes. 
+"
 cap <- paste0(
   "**Data**: International Chess Federation<br>**Graphic**: ", "@Programandoenr"
 )
@@ -199,13 +198,14 @@ p <- ggplot(
   )
 p
 
+
 ggdraw(p) +
   draw_text(
     x = 0.62, y = 0.64,
     size = 12,
     colour = text_col,
     family = body_font,
-    text = "All gender titles"
+    text = "Todos los títulos de género"
   ) +
   draw_grob(
     curveGrob(

@@ -16,7 +16,8 @@ china <- china
 df <- china 
 
 
-plot <- ggplot(data = df) +
+
+ggplot(data = df) +
   ggtitle("   Población de China") +
   xlab("")+
   ylab("") +
@@ -27,7 +28,7 @@ plot <- ggplot(data = df) +
     name = waiver(),
     low = "red",
     mid = "#f9f8f9",
-    high = "blue",
+    high = "#054816",
     midpoint = 0,
     space = "Lab",
     na.value = "grey50",
@@ -52,7 +53,7 @@ plot <- ggplot(data = df) +
     colour = "gray20") +
   
   geom_text(
-    label="4%",
+    label="6%",
     x = 90, y = 40,
     size=12,
     family="fira",
@@ -120,3 +121,5 @@ plot <- ggplot(data = df) +
         axis.text.x = element_text(size = 8, colour = "gray20"),
         panel.background = element_rect(fill = 'white', color = 'white'),
         legend.position = "none") 
+
+
