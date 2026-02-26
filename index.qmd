@@ -1,5 +1,5 @@
 ---
-title: "&nbsp;&nbsp;Freddy Villabona C."
+title: "&nbsp;&nbsp;Fredd Villabona C."
 subtitle: "Working as a data scientist at h.security S. L.<br>[Resume](https://docs.google.com/document/d/1tK3Pr6gwD0YipuBWaxsrwVTeCnOuY7V82V6s0LOSIXk/edit?usp=sharing) | [ProgramandoenR](https://freddyvillabona.github.io/fv/programandoenr.html) | R Views<br>Syndicated on [R-Bloggers]() & R Weekly<br><br>**`|> May all dreams come true! :)`**"
 format:
   lumo-html: 
