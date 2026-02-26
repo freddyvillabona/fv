@@ -4,7 +4,7 @@ execute:
   warning: false
   fig-show: no
 title: "Estadistícas de producción agrícola en Nueva Zelanda"
-author: "FV"
+author: "FV "
 date: "2026-02-25"
 categories: [code, analysis]
 image: "nz.png"
