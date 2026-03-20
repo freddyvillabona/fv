@@ -32,12 +32,7 @@ about:
     - text: Email
       href: mailto:freddyvillabonac@gmail.com
 
-<<<<<<< HEAD
-    - text: LinKedIn
-=======
-
     - text: linKedin
->>>>>>> 910c253bd2df496918f83054a31edcb0e68e175d
       href: https://www.linkedin.com/in/freddvillabona/
       
     - text: Bluesky
