@@ -241,7 +241,7 @@ ggdraw(p) +
     width = 4.5, height = 7.5,
     units = "in", bg = bg_col,
     dpi = 300
-  ) -> p
+  ) 
 
 
 

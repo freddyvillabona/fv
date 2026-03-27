@@ -104,7 +104,7 @@ p1 <- ggplot(data=coffee_ratings) +
                outlier.shape = NA,
                coef = 0,
                color = "#daa520",
-     '          fill = "red") +
+             fill = "red") +
   geom_vline(xintercept = mean(coffee_ratings$total_cup_points),
              linetype = 2,
              size = 0.5, col="red") +
