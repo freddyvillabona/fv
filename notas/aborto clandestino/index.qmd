@@ -7,7 +7,7 @@ title: "Aborto Clandestino"
 author: "FV"
 date: "2026-05-24"
 categories: [notes]
-image: "roma.jpg"
+image: "ac.jpg"
 ---
 
 
