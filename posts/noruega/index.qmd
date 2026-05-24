@@ -63,7 +63,6 @@ design <- "
   ##H
 "
 
-
 title <- glue("<span style='font-family:{title_font};font-size:15pt;'>**La mortalidad del salmón es estacional**</span><br>")
 st <- glue("{title}Informes mensuales de pérdidas de producción de la Dirección de Pesca, revelan que la mortalidad del salmón en <span style='color:#7F055F;'>**diferetntes regiones**</span> de <span style='color:#197176;'>**Noruega (Nor)**</span>siguen un patrón estacional, con un pico de mortalidad que suele alcanzarse alrededor de marzo de cada año.")
 cap <- c("Instituto Veterinario de Noruega")
