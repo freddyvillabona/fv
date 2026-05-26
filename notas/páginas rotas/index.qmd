@@ -3,7 +3,7 @@ execute:
   message: false
   warning: false
   fig-show: no
-title: "Páginas rotas"
+title: "Paginas rotas"
 author: "FV"
 date: "2026-04-11"
 categories: [notes]
