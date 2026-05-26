@@ -1,0 +1,26 @@
+---
+execute:
+  message: false
+  warning: false
+  fig-show: no
+title: "Páginas rotas"
+author: "FV"
+date: "2026-04-11"
+categories: [notes]
+image: "ac.jpg"
+---
+
+
+Era una tarde de otoño, día como cualquier otro con un poco de frío y mucho viento, día de trabajo, después de una jornada de ocho horas llega a casa, Thomas. Pasa directo a la habitación a dejar su mochila e inmediatamente va a la cocina para sentarse a comer. Era habitual que su pareja Marle guardara su comida en el microondas, era su demostración de amor y compromiso con él. Ella tenia una jornada de trabajo más larga, salía temprano y en su pausa de medio día, Después 
+
+
+
+
+#&mdash;
+
+
+
+
+
+
+
