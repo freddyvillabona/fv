@@ -1,0 +1,29 @@
+---
+execute:
+  message: false
+  warning: false
+  fig-show: no
+title: "Páginas rotas"
+author: "FV"
+date: "2026-04-11"
+categories: [notes]
+image: "ac.jpg"
+---
+
+
+
+Era una tarde de otoño, día como cualquier otro con un poco de frío y mucho viento en la ciudad, típico clima en las zonas costeras de España en semanas previas al inicio del invierno, día de trabajo cotidiano, después de una jornada de ocho horas llega a casa, Thomas. Pasa directo a la habitación a dejar su mochila e inmediatamente va a la cocina para sentarse a comer. Era habitual que su pareja Marle guardara su comida en el microondas, era su demostración de amor y compromiso con él. Ella tenia una jornada de trabajo más larga, salía temprano y en su pausa de medio día preparaba la comida y guardaba el plato para Thomas, quien regularmente llegaba un poco más tarde. 
+
+Desde el exterior se notaba una pareja normal y comprometida, aunque habían muchas fisuras por culpa de los comportamientos erráticos y contradictorios de Thomas, y también por los celos y reclamos desmedidos de Marle. Ella con temperamento complicado: dominante, explosiva, victimista y calculadora. 
+
+
+
+
+#&mdash;
+
+
+
+
+
+
+
