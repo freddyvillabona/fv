@@ -27,6 +27,7 @@ website:
       - intrusionsystems.qmd
 #      - ca.qmd
       - notes.qmd
+      - book.qmd
 
   
 #page-footer: "Built with Quarto - 2025"

@@ -1,0 +1,19 @@
+---
+execute:
+  message: false
+  warning: false
+  fig-show: no
+title: "Gestos pequeños"
+author: "FV"
+date: "2024-05-01"
+categories: [notes]
+image: "cafe.jpg"
+---
+
+Creo firmemente en los gestos pequeños: saludar, sonreír, sujetar la puerta, invitar un café, devolver el balón que se escapa por la acera; intentar ser amable aunque sea un día complicado, intentar ser más grande de lo que eres, sobre todo cuando es difícil.
+
+Las buenas personas se dan cuenta y lo aprecian. Cuando alguien puede hacer algo por mí, también lo aprecio.
+
+Los gestos pequeños pueden suponer un esfuerzo, o incluso ir contra nuestra corriente, pero lo irónico es que casi siempre que los haces, te sientes mejor contigo mismo.
+
+Por un momento, la vida parece de repente más ligera, más tranquila y sin duda más feliz.

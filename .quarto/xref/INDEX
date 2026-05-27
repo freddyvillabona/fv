@@ -456,5 +456,26 @@
   },
   "notas/visitas/index.qmd": {
     "index.html": "5670f795"
+  },
+  "book.qmd": {
+    "book.html": "bcc1fb5f"
+  },
+  "book/aborto clandestino/index.qmd": {
+    "index.html": "f885dfd7"
+  },
+  "book/libro destruido/index.qmd": {
+    "index.html": "a193c7a9"
+  },
+  "book/n1/index.qmd": {
+    "index.html": "c7993b55"
+  },
+  "book/pag rotas/index.qmd": {
+    "index.html": "e036f4e4"
+  },
+  "book/roma/index.qmd": {
+    "index.html": "6eb1d45f"
+  },
+  "book/visitas/index.qmd": {
+    "index.html": "bce37ee4"
   }
 }
