@@ -7,7 +7,7 @@ title: "Social media analysis (using APIs Meta & X)"
 author: "FV"
 date: "2025-12-31"
 categories: [code, analysis]
-image: "cafe1.png"
+image: "rs.png"
 ---
 
 ::: callout-important
