@@ -7,7 +7,7 @@ title: "Social media analysis (using APIs Meta & X)"
 author: "FV"
 date: "2025-12-31"
 categories: [code, analysis]
-image: "rs.png"
+image: "rs1.png"
 ---
 
 ::: callout-important
@@ -51,4 +51,4 @@ showtext_auto()
 #p1
 ```
 
-![](rs.png)
+![](rs1.png)
