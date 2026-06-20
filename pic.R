@@ -8,7 +8,7 @@ from ninejs import interactive, save, css
 geo_url = "https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/communes.geojson"
 data_url = "https://raw.githubusercontent.com/holtzy/R-graph-gallery/master/DATA/data_on_french_states.csv"
 departments = ["06", "83", "13", "30", "34", "11", "66"]
-background_color = "#f5f5f2"
+background_color = "#FFFFFF"
 text_color = "#34322f"
 
 communes = gp.read_file(geo_url)

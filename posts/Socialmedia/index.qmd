@@ -11,6 +11,17 @@ image: "rs1.png"
 ---
 
 ::: callout-important
+ES
+:::
+
+En esta oportunidad se trabajan con datos extraídos a través del API de Meta y X. Lo único que se necesita son las credenciales y claves Key que genera y proporciona cada plataforma. Antes de poder acceder a cualquiera de los claves y sericios, es necesario solicitar una autorización en el sitio web de desarrolladores de Meta y X.
+
+La extracción de datos por estas vías están sujetas a las regulaciones de cada plataforma (se obtienen metricas en tiempo real, comentarios, urls y datos en tiempos especificos). Esta vez el compendio está desarrollado con Python (extracción) y R (manipulación de datos y gráficos) 
+Este panel de control se ha creado en quarto. Se extrae la data y se actualiza el gráfico dinámicamente. La API se ejecuta automáticamente tres veces por mes, puede configurarse al momento de crear las claves API, hay diferentes límites de tiempo disponibles. 
+
+Ejemplo: API; https://github.com/freddyvillabona/extraer-tuits-tweepy/tree/master
+
+::: callout-important
 EN
 :::
 
