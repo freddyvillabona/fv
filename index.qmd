@@ -26,6 +26,9 @@ about:
     - icon: facebook
       href: https://facebook.com/programandoenr
       
+    - icon: github
+      href: https://freddyvillabona.github.io/fv/
+      
     - icon: telegram
       href: https://t.me/programandoinr
       
