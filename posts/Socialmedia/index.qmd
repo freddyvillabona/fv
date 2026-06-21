@@ -115,7 +115,7 @@ ggplot(datos, aes(x = Mes, y = Cantidad, group = Metrica, color = Metrica)) +
 ```
 
 
-La Psicología y la Ciencia de Datos tienen lazos muy importantes en la búsqueda de patrones. Este gráfico estadístico trabajado con regresión lineal múltiple y datos reales, representa un evento denominado &mdashTierrra Quemada&mdash: ocurrido con un paciente después de un colapso emocional por carga de culpa,miedo a la soledad, presión, evasión, conflictos internos no resueltos y huida hacia adelante en complicidad.
+La Psicología y la Ciencia de Datos tienen lazos muy importantes en la búsqueda de patrones. Este gráfico estadístico trabajado con regresión lineal múltiple y datos reales, representa un evento denominado &mdas —Tierrra Quemada—: ocurrido con un paciente después de un colapso emocional por carga de culpa,miedo a la soledad, presión, evasión, conflictos internos no resueltos y huida hacia adelante en complicidad.
 
 Un análisis psicológico de María José Valiente por este caso con una metafora.
 «Es algo como ejecutar un disparo y después ocultar el arma debajo de la alfombra, lavarse las manos y huir en  cómplicidad. Hay que desaparecer cualquier rastro digital, especialmente en redes sociales para no sentir. Solapar nexos y suprimir el pasado para poder vivir y no herir al entorno, tácticamente fingir ante los demás: aquí no ha pasando nada es solo un movimiento pequeño». —María José Valiente
