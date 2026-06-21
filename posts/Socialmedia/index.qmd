@@ -123,5 +123,4 @@ Un análisis psicológico de María José Valiente por este caso con una metafor
 Investigación realizada con Python, R APIs Meta & X.
 
 
-
 ![](rs1.png)
