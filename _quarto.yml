@@ -2,7 +2,7 @@ project:
   type: website
   output-dir: docs
   resources:
-    - "files/"
+    - "/files/logo.jpg"
   render:
     - "*.qmd"
     - "*.Rmd"
@@ -18,7 +18,7 @@ website:
   google-analytics: "G-DSTHFZLFYC"
   title: "|>"
   navbar:
-      logo: /files/logo.jpg
+      logo: logo.jpg
       background: "#09213e"
       right:
       - href: index.qmd
