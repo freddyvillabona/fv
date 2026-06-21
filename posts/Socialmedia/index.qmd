@@ -7,7 +7,7 @@ title: "Social media analysis (using APIs Meta & X)"
 author: "FV"
 date: "2025-12-31"
 categories: [code, analysis]
-image: "rs1.png"
+image: "rs.png"
 ---
 
 ::: callout-important
@@ -56,10 +56,62 @@ font_add_google("Raleway","ral")
 font_add_google("Bitter","bit")
 showtext_auto()
 
+# 2. Definición de la paleta de colores
+colores_personalizados <- c(
+  "Followers" = "#2E5B82",    # Azul sutil
+  "Following" = "#D0873D",    # Naranja/Dorado
+  "Posts" = "#B0413E"         # Rojo/Marrón opaco
+)
 
+# 3. Construcción del gráfico con ggplot2
+ggplot(datos, aes(x = Mes, y = Cantidad, group = Metrica, color = Metrica)) +
+  
+  # Líneas y puntos con los grosores correspondientes
+  geom_line(linewidth = 1.2) +
+  geom_point(size = 3) +
+  
+  # Etiquetas de texto con posición dinámica y tipografía en negrita
+  geom_text(aes(label = Cantidad, vjust = vjust_personalizado),
+            fontface = "bold",
+            size = 3.5,
+            show.legend = FALSE) +
+  
+  # Escala de colores manual
+  scale_color_manual(values = colores_personalizados, name = "Metrics Analysed") +
+  
+  # Ajuste de los límites y cortes del eje Y
+  scale_y_continuous(limits = c(-50, 1200), breaks = seq(0, 1200, by = 200)) +
+  
+  # Títulos y etiquetas de los ejes
+  labs(
+    title = "Time-dependent evolution of the profile (purge pattern)",
+    subtitle = "Analysis of correlated metrics",
+    caption = "API: Meta-Instagram  X:SuperGrok",
+    x = "Sequential (Chronological) Logging Points",
+    y = "Absolute Quantity"
+  ) +
+  
 
+  theme_minimal() +
+  theme(
+    plot.caption = element_text(face = "bold", size = 11, color = "#333333", margin = margin(t = 15)),
+    plot.title = element_text(face = "bold", size = 14, hjust = 0.5, margin = margin(b = 5)),
+    plot.subtitle = element_text(face = "italic", size = 10, hjust = 0.5, color = "#555555", margin = margin(b = 20)),
+    axis.title.x = element_text(face = "bold", size = 10, margin = margin(t = 15)),
+    axis.title.y = element_text(face = "bold", size = 10, margin = margin(r = 15)),
+    axis.text = element_text(color = "#777777", size = 9),
+    
+    panel.grid.major = element_line(color = "#FFFFFF", linetype = "dashed"),
+    panel.grid.minor = element_blank(),
+    
 
-#p1
+    legend.position = "bottom",
+    legend.direction = "horizontal",
+    legend.title = element_text(size = 14, face = "bold"), 
+    legend.text = element_text(size = 14),                
+    legend.spacing.x = unit(0.3, "cm"),                  
+    plot.margin = margin(20, 20, 20, 20)
+  )
 ```
 
 
