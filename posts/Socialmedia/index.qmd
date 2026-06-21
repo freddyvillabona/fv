@@ -32,6 +32,8 @@ Built with Python and R. This dashboard is created in Quart. The API runs the qu
 APIs: https://github.com/freddyvillabona/extraer-tuits-tweepy/tree/master
 
 ```{r}
+#| message: false
+#| warning: false
 # LIBRARIES
 library(tidyverse)
 library(ggpubr)
