@@ -9,6 +9,13 @@
   library(ggplot2)
   library(cowplot)
   library(magick)
+  library(tidyverse)
+  library(showtext)
+  library(ggtext)
+  library(nrBrand)
+  library(glue)
+  library(ggview)
+  library(ggh4x)
 }
 
 url_logo <- image_read("a.png")
