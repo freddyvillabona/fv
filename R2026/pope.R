@@ -158,8 +158,9 @@ ggplot() +
     caption = cap
   ) +
   coord_cartesian(clip = "off") +
-  theme_minimal(base_size = 10, base_family = body_font) +
+  theme_minimal(base_size = 12, base_family = body_font) +
   theme(
+    panel.grid = element_blank(),
     plot.margin = margin(10, 10, 10, 10),
     plot.title.position = "plot",
     plot.caption.position = "plot",
@@ -207,7 +208,7 @@ ggplot() +
     dpi = 300
   ) -> p
 
-
+p
 # Save --------------------------------------------------------------------
 
 fig <- cowplot::ggdraw() +
