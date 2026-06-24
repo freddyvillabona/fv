@@ -1,0 +1,1 @@
+"Working as a Data Scientist on Fiverr. <br>Cybersecurity at Fiverr.<br>[Resume](https://docs.google.com/document/d/1tK3Pr6gwD0YipuBWaxsrwVTeCnOuY7V82V6s0LOSIXk/edit?usp=sharing) | [ProgramandoenR](https://freddyvillabona.github.io/fv/programandoenr.html) | R Views<br>Syndicated on [R-Bloggers]() & R Weekly<br>|> May all dreams come true! 🤍"+
