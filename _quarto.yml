@@ -18,7 +18,7 @@ website:
   google-analytics: "G-DSTHFZLFYC"
   title: "|>"
   navbar:
-      logo: logo.jpg
+      logo: files/logo.png
       background: "#09213e"
       right:
       - href: index.qmd
