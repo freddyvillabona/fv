@@ -1,7 +1,25 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-
-<meta charset="utf-8">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./files/logo.jpg" rel="icon" type="image/jpeg">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-fec42b7f652cd22e29bc8bd2e75dbe95.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light"><meta charset="utf-8">
 <meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
@@ -45,7 +63,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-fec42b7f652cd22e29bc8bd2e75dbe95.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-079854a60f2d0760a65f8564faf58335.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -111,6 +129,7 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-DSTHFZLFYC', { 'anonymize_ip': true});
 </script>
+<style>html{ scroll-behavior: smooth; }</style>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -142,10 +161,10 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="site_libs/quarto-contrib/quarto-project/holtzy/lumo/style.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
@@ -194,32 +213,95 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">📊 programandoenR</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta column-page-left">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<header id="title-block-header" class="quarto-title-block"><h1 class="title display-7">📊 programandoenR</h1></header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
+  
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(25)</span></div><div class="category" data-category="YW5hbHlzaXM=">analysis <span class="quarto-category-count">(22)</span></div><div class="category" data-category="Y29kZQ==">code <span class="quarto-category-count">(25)</span></div><div class="category" data-category="bWFw">map <span class="quarto-category-count">(4)</span></div><div class="category" data-category="dGlwcw==">tips <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(25)</span></div><div class="category" data-category="YW5hbHlzaXM=">analysis <span class="quarto-category-count">(22)</span></div><div class="category" data-category="Y29kZQ==">code <span class="quarto-category-count">(25)</span></div><div class="category" data-category="bWFw">map <span class="quarto-category-count">(4)</span></div><div class="category" data-category="dGlwcw==">tips <span class="quarto-category-count">(1)</span></div></div><h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(25)</span></div><div class="category" data-category="YW5hbHlzaXM=">analysis <span class="quarto-category-count">(22)</span></div><div class="category" data-category="Y29kZQ==">code <span class="quarto-category-count">(25)</span></div><div class="category" data-category="bWFw">map <span class="quarto-category-count">(4)</span></div><div class="category" data-category="dGlwcw==">tips <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-body" id="quarto-document-content">
 
+<style>
+  :root {
+    --primary-color: ;
+  }
+  .title-block-content {
+    position: relative;
+    padding-top: 130px;
+    padding-bottom: 130px;
+    max-width: 752px;
+    margin: auto;
+  }
+  .header-keyword {
+    color: rgb(59, 59, 59);
+    opacity: 0.5;
+    font-size: 14;
+  }
+  .octocat-container {
+    fill: var(--primary-color);
+    color: #fff;
+    position: absolute;
+    top: 0;
+    border: 0;
+    right: 0;
+  }
+  #particles-js {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+  }
+  .bg-image {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+</style>
 
+<header id="title-block-header" style="position: relative">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+  <!-- This is the div in which the background image will be included -->
+  
+  <!-- This is the div in which the particles will be included -->
+  
+  <!-- Actual content on top of the particles-->
+  <div class="title-block-content">
+    <!-- Logo -->
+    
+    <!-- Title -->
+        <center>
+    
+    </center>
+    
+    <hr>
+
+    <!-- Subtitle -->
+    
+    <!-- Author -->
+    
+    <!-- Date -->
+    
+    <!-- Particle.js script loaded from a CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- use the particle js library with our own config (json file). -->
+    <script>
+      particlesJS.load(
+        "particles-js",
+        "https://raw.githubusercontent.com/holtzy/lumo/main/_extensions/lumo/particles.json"
+      );
+    </script>
+  </div>
+</header>
+
+<!------------------------- Code for the octocat (github Mascot) that will be included if a link to the github repo is provided. ------------------->
 
 
 
@@ -247,16 +329,7 @@ window.Quarto = {
 
 </div>
 <div class="delink listing-description"><a href="./posts/noruega/index.html" class="no-external">
-
-  :root {
-    --primary-color: ;
-  }
-  .title-block-content {
-    position: relative;
-    padding-top: 130px;
-    padding-bottom: 130px;
-    max-width: 752px;
-    margin…
+<!-- desc(5A0113B34292)[max=175]:posts/noruega/index.html -->
 </a></div>
 </div>
 <div class="metadata">
@@ -288,7 +361,7 @@ FV
 
 </div>
 <div class="delink listing-description"><a href="./posts/newZeland/index.html" class="no-external">
-EN
+<!-- desc(5A0113B34292)[max=175]:posts/newZeland/index.html -->
 </a></div>
 </div>
 <div class="metadata">
@@ -320,7 +393,7 @@ FV
 
 </div>
 <div class="delink listing-description"><a href="./posts/Socialmedia/index.html" class="no-external">
-<span class="header-keyword">Author: </span>FV
+<!-- desc(5A0113B34292)[max=175]:posts/Socialmedia/index.html -->
 </a></div>
 </div>
 <div class="metadata">
@@ -352,7 +425,7 @@ FV
 
 </div>
 <div class="delink listing-description"><a href="./posts/oil/index.html" class="no-external">
-Aumento de precios de la gasolina en EE.UU.
+<!-- desc(5A0113B34292)[max=175]:posts/oil/index.html -->
 </a></div>
 </div>
 <div class="metadata">
@@ -384,7 +457,7 @@ FV
 
 </div>
 <div class="delink listing-description"><a href="./posts/colors/index.html" class="no-external">
-La encuesta de colores de XKCD, realizada por Randall Munroe en 2010, pidió a cientos de miles de participantes que nombraran colores RGB mostrados en pantalla. Con más de 5…
+<!-- desc(5A0113B34292)[max=175]:posts/colors/index.html -->
 </a></div>
 </div>
 <div class="metadata">
@@ -418,7 +491,7 @@ FV
 
 </div>
 <div class="delink listing-description"><a href="./posts/map/index.html" class="no-external">
-#Maps
+<!-- desc(5A0113B34292)[max=175]:posts/map/index.html -->
 </a></div>
 </div>
 <div class="metadata">
@@ -450,7 +523,7 @@ FV
 
 </div>
 <div class="delink listing-description"><a href="./posts/tidyplots/index.html" class="no-external">
-TIDYPLOTS
+<!-- desc(5A0113B34292)[max=175]:posts/tidyplots/index.html -->
 </a></div>
 </div>
 <div class="metadata">
@@ -482,7 +555,7 @@ FV
 
 </div>
 <div class="delink listing-description"><a href="./posts/dogs/index.html" class="no-external">
-World’s tallest towers (Top 6)
+<!-- desc(5A0113B34292)[max=175]:posts/dogs/index.html -->
 </a></div>
 </div>
 <div class="metadata">
@@ -514,7 +587,7 @@ FV
 
 </div>
 <div class="delink listing-description"><a href="./posts/map_china/index.html" class="no-external">
-En este caso trabajando con la librería “mapchina”. Esta librería contiene capas shapefile y datos poblacionales. Trabajando con la función gradiente de colores.
+<!-- desc(5A0113B34292)[max=175]:posts/map_china/index.html -->
 </a></div>
 </div>
 <div class="metadata">
@@ -546,7 +619,7 @@ FV
 
 </div>
 <div class="delink listing-description"><a href="./posts/enfermedades/index.html" class="no-external">
-Esta vez se tiene un gráfico de barras “ggplot2” con paleta de colores manual.
+<!-- desc(5A0113B34292)[max=175]:posts/enfermedades/index.html -->
 </a></div>
 </div>
 <div class="metadata">
@@ -578,7 +651,7 @@ FV
 
 </div>
 <div class="delink listing-description"><a href="./posts/webScraping/index.html" class="no-external">
-Esta vez se trabaja con el paquete ”rvest” y la intención es obtener un marco de datos de Wikipedia.
+<!-- desc(5A0113B34292)[max=175]:posts/webScraping/index.html -->
 </a></div>
 </div>
 <div class="metadata">
@@ -610,7 +683,7 @@ FV
 
 </div>
 <div class="delink listing-description"><a href="./posts/vinos/index.html" class="no-external">
-El objetivo es extraer información útil a partir de un análisis estadístico para este marco de datos.
+<!-- desc(5A0113B34292)[max=175]:posts/vinos/index.html -->
 </a></div>
 </div>
 <div class="metadata">
@@ -642,7 +715,7 @@ FV
 
 </div>
 <div class="delink listing-description"><a href="./posts/bar_horizontal/index.html" class="no-external">
-Los datos representan el Índice de Desarrollo Humano en los diferentes distritos del Municipio de São Paulo en el 2010.
+<!-- desc(5A0113B34292)[max=175]:posts/bar_horizontal/index.html -->
 </a></div>
 </div>
 <div class="metadata">
@@ -676,16 +749,7 @@ FV
 
 </div>
 <div class="delink listing-description"><a href="./posts/library_unikn/index.html" class="no-external">
-
-  :root {
-    --primary-color: ;
-  }
-  .title-block-content {
-    position: relative;
-    padding-top: 130px;
-    padding-bottom: 130px;
-    max-width: 752px;
-    margin…
+<!-- desc(5A0113B34292)[max=175]:posts/library_unikn/index.html -->
 </a></div>
 </div>
 <div class="metadata">
@@ -717,7 +781,7 @@ FV
 
 </div>
 <div class="delink listing-description"><a href="./posts/copenhague/index.html" class="no-external">
-Datos: climate_CPH (1995-2019)
+<!-- desc(5A0113B34292)[max=175]:posts/copenhague/index.html -->
 </a></div>
 </div>
 <div class="metadata">
@@ -749,7 +813,7 @@ FV
 
 </div>
 <div class="delink listing-description"><a href="./posts/tormentas/index.html" class="no-external">
-Ciclones desde 2008 a 2022 - Datos: NOAA
+<!-- desc(5A0113B34292)[max=175]:posts/tormentas/index.html -->
 </a></div>
 </div>
 <div class="metadata">
@@ -781,7 +845,7 @@ FV
 
 </div>
 <div class="delink listing-description"><a href="./posts/coffee/index.html" class="no-external">
-EN
+<!-- desc(5A0113B34292)[max=175]:posts/coffee/index.html -->
 </a></div>
 </div>
 <div class="metadata">
@@ -813,7 +877,7 @@ FV
 
 </div>
 <div class="delink listing-description"><a href="./posts/d/index.html" class="no-external">
-This time we work with diamond data. It generates a diagram of box with “ggplot2”, with various details in the chart that allow better perceive the distribution of data.
+<!-- desc(5A0113B34292)[max=175]:posts/d/index.html -->
 </a></div>
 </div>
 <div class="metadata">
@@ -845,7 +909,7 @@ FV
 
 </div>
 <div class="delink listing-description"><a href="./posts/map_UK/index.html" class="no-external">
-Map of the United Kingdom drawn from a shapefile layer. This is a post with executable code.
+<!-- desc(5A0113B34292)[max=175]:posts/map_UK/index.html -->
 </a></div>
 </div>
 <div class="metadata">
@@ -877,7 +941,7 @@ FV
 
 </div>
 <div class="delink listing-description"><a href="./posts/Towers/index.html" class="no-external">
-World’s tallest towers (Top 6)
+<!-- desc(5A0113B34292)[max=175]:posts/Towers/index.html -->
 </a></div>
 </div>
 <div class="metadata">
@@ -911,7 +975,7 @@ FV
 
 </div>
 <div class="delink listing-description"><a href="./posts/Ukraine_map_ggplot2/index.html" class="no-external">
-Working with the libraries: “sf”, “stringr”, “dplyr”, “ggplot2” and “ggthemes”. 🇺🇦
+<!-- desc(5A0113B34292)[max=175]:posts/Ukraine_map_ggplot2/index.html -->
 </a></div>
 </div>
 <div class="metadata">
@@ -943,7 +1007,7 @@ FV
 
 </div>
 <div class="delink listing-description"><a href="./posts/World_Cup/index.html" class="no-external">
-Winning the 2022 World Cup
+<!-- desc(5A0113B34292)[max=175]:posts/World_Cup/index.html -->
 </a></div>
 </div>
 <div class="metadata">
@@ -975,7 +1039,7 @@ FV
 
 </div>
 <div class="delink listing-description"><a href="./posts/notes_ggplot2/index.html" class="no-external">
-Qualification of a university student in their last 7 semesters. 🇨🇭
+<!-- desc(5A0113B34292)[max=175]:posts/notes_ggplot2/index.html -->
 </a></div>
 </div>
 <div class="metadata">
@@ -1005,7 +1069,7 @@ FV
 
 </div>
 <div class="delink listing-description"><a href="./posts/Contornos/index.html" class="no-external">
-This is a post with executable code.
+<!-- desc(5A0113B34292)[max=175]:posts/Contornos/index.html -->
 </a></div>
 </div>
 <div class="metadata">
@@ -1037,7 +1101,7 @@ FV
 
 </div>
 <div class="delink listing-description"><a href="./posts/emissions/index.html" class="no-external">
-This is a post with executable code.
+<!-- desc(5A0113B34292)[max=175]:posts/emissions/index.html -->
 </a></div>
 </div>
 <div class="metadata">
@@ -1053,7 +1117,9 @@ FV
 </div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</div><div class="quarto-listing quarto-listing-container-default" id="listing-listing"></div></main> <!-- /main -->
+<div class="footer-container">
+</div>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -1395,25 +1461,64 @@ FV
           }
         };
       }
-        // Attach click handler to the DT
-        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-        for (const annoteDlNode of annoteDls) {
-          annoteDlNode.addEventListener('click', (event) => {
-            const clickedEl = event.target;
-            if (clickedEl !== selectedAnnoteEl) {
-              unselectCodeLines();
-              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-              if (activeEl) {
-                activeEl.classList.remove('code-annotation-active');
-              }
-              selectCodeLines(clickedEl);
-              clickedEl.classList.add('code-annotation-active');
-            } else {
-              // Unselect the line
-              unselectCodeLines();
-              clickedEl.classList.remove('code-annotation-active');
+        const annoteTargets = window.document.querySelectorAll('.code-annotation-anchor');
+        for (let i=0; i<annoteTargets.length; i++) {
+          const annoteTarget = annoteTargets[i];
+          const targetCell = annoteTarget.getAttribute("data-target-cell");
+          const targetAnnotation = annoteTarget.getAttribute("data-target-annotation");
+          const contentFn = () => {
+            const content = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+            if (content) {
+              const tipContent = content.cloneNode(true);
+              tipContent.classList.add("code-annotation-tip-content");
+              return tipContent.outerHTML;
             }
-          });
+          }
+          const config = {
+            allowHTML: true,
+            content: contentFn,
+            onShow: (instance) => {
+              selectCodeLines(instance.reference);
+              instance.reference.classList.add('code-annotation-active');
+              window.tippy.hideAll();
+            },
+            onHide: (instance) => {
+              unselectCodeLines();
+              instance.reference.classList.remove('code-annotation-active');
+            },
+            maxWidth: 300,
+            delay: [50, 0],
+            duration: [200, 0],
+            offset: [5, 10],
+            arrow: true,
+            appendTo: function(el) {
+              return el.parentElement.parentElement.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'quarto',
+            placement: 'right',
+            popperOptions: {
+              modifiers: [
+              {
+                name: 'flip',
+                options: {
+                  flipVariations: false, // true by default
+                  allowedAutoPlacements: ['right'],
+                  fallbackPlacements: ['right', 'top', 'top-start', 'top-end', 'bottom', 'bottom-start', 'bottom-end', 'left'],
+                },
+              },
+              {
+                name: 'preventOverflow',
+                options: {
+                  mainAxis: false,
+                  altAxis: false
+                }
+              }
+              ]        
+            }      
+          };
+          window.tippy(annoteTarget, config); 
         }
     const findCites = (el) => {
       const parentEl = el.parentElement;
@@ -1464,7 +1569,7 @@ FV
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>FV-2026</p>
+<p>Acknowledgements to Liliana Capacho, Nicola Rennie, Hadley Wickham y Yan Holtz | FV-2026</p>
 </div>
   </div>
 </footer>
@@ -1472,4 +1577,5 @@ FV
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
