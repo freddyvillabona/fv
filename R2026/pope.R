@@ -1,5 +1,4 @@
 # Load packages -----------------------------------------------------------
-
 {
 library(tidyverse)
 library(showtext)
@@ -11,6 +10,7 @@ source("lib.R")
 }
 # Load data ---------------------------------------------------------------
 
+url_logo <- image_read("a.png")
 tuesdata <- tidytuesdayR::tt_load("2026-06-23")
 encyclicals <- tuesdata$encyclicals
 papal_encyclicals <- tuesdata$papal_encyclicals
@@ -78,14 +78,14 @@ avg_data <- plot_data |>
   select(pope_label, n, year_diff) |>
   mutate(avg_n = n / year_diff) |>
   distinct()
-
+X
 
 # Define text -------------------------------------------------------------
 
 social <- c("")
-title <- "Número de encíclicas papales [1878-2026]"
-st <- "Una *encíclica papal* es una carta formal del Papa, dirigida normalmente a los obispos o a la Iglesia católica en general, en la que se expone la enseñanza oficial sobre cuestiones de doctrina, moral o temas sociales."
-cap <- paste0("**Nota**: Cada punto representa un año en el que se publicó una encíclica papal, y el tamaño del punto indica el número de encíclicas publicadas ese año..<br>")
+title <- "Número de encíclicas papales [1878-2026]<br>"
+st <- "Una *encíclica papal* es una carta formal del Papa, dirigida normalmente a los obispos o a la Iglesia católica en general, en la que se expone la enseñanza oficial sobre cuestiones de doctrina, moral o temas sociales.<br>"
+cap <- paste0("**Nota**: Cada punto representa un año en el que se publicó una encíclica papal, y el tamaño del punto indica el número de encíclicas publicadas ese año.")
 
 
 # Plot --------------------------------------------------------------------
@@ -106,7 +106,7 @@ ggplot() +
     data = plot_data,
     mapping = aes(x = 1, y = pope_label, label = start_year),
     family = body_font,
-    size = 3,
+    size = 3.5,
     vjust = -1.2,
     hjust = 1
   ) +
@@ -213,6 +213,10 @@ p
 
 fig <- cowplot::ggdraw() +
   cowplot::draw_plot(p) +
-  cowplot::draw_image(url_logo, x = 0.85, y = -0.04, width = 0.12, height = 0.12)
+  cowplot::draw_image(url_logo, 
+                      x = 0.85, 
+                      y = -0.04, 
+                      width = 0.12, 
+                      height = 0.12)
 
 fig

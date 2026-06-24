@@ -17,7 +17,6 @@
   library(ggview)
   library(ggh4x)
 }
-
 url_logo <- image_read("a.png")
 
 # 1. Creación del dataset con los datos exactos (8 puntos de registro por métrica)
