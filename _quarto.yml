@@ -2,7 +2,7 @@ project:
   type: website
   output-dir: docs
   resources:
-    - "/files/logo.jpg"
+    - "files/logo.jpg"
   render:
     - "*.qmd"
     - "*.Rmd"
