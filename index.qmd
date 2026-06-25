@@ -3,7 +3,7 @@ title: "&nbsp;&nbsp;<br> &nbsp;&nbsp; Fredd Villabona C.<hr>"
 subtitle: "Working as a Data Scientist on Fiverr. <br>Cybersecurity at Fiverr.<br>
   [Resume](https://google.com) | [ProgramandoenR](https://freddyvillabona.github.io/fv/programandoenr.html) | R Views<br>
   Syndicated on [R-Bloggers](https://www.r-bloggers.com/2024/04/how-to-install-ggplot2-in-r-a-comprehensive-guide/) & R Weekly<br>
-  |> May all dreams come true! 🤍"
+  |> May all dreams come true! 🤍<br>🗺️ Caracas, Venezuela"
 format:
   lumo-html: 
     logo: "a.jpg"                                         # Optional. Path to 
