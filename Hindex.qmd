@@ -24,6 +24,9 @@ about:
       
     - text: Email
       href: mailto:freddyvillabonac@gmail.com
+      
+    - text: Email
+      href: mailto:programandoenr@gmail.com
 
     - text: LinkedIn
       href: https://www.linkedin.com/in/freddvillabona/
