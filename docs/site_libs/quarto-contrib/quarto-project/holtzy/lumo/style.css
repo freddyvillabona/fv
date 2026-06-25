@@ -163,4 +163,9 @@ canvas {
   z-index: -1 !important;
 }
 
+hr {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; /* Puedes ajustar el ancho que prefieras */
+}
 

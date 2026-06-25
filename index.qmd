@@ -1,5 +1,5 @@
 ---
-title: "&nbsp;&nbsp;<br> &nbsp;&nbsp; Fredd Villabona C.<hr>"
+title: "&nbsp;&nbsp;<br> &nbsp;&nbsp;Fredd Villabona C."
 subtitle: "Working as a Data Scientist on Fiverr. <br>Cybersecurity at Fiverr.<br>
   [Resume](https://google.com) | [ProgramandoenR](https://freddyvillabona.github.io/fv/programandoenr.html) | R Views<br>
   Syndicated on [R-Bloggers](https://www.r-bloggers.com/2024/04/how-to-install-ggplot2-in-r-a-comprehensive-guide/) & R Weekly<br>
