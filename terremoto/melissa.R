@@ -167,7 +167,7 @@ A <- ggplot() +
   ) 
 
 # Imprimir el mapa resultante
-print(A)
+#print(A)
 
 
 
@@ -181,7 +181,7 @@ B <- ggdraw(A) +
     text = str_wrap("La Guaira ha sido la zona más afectada y declarada oficialmente como la Zona cero del desastre.", 17)
   )
 
-B
+#B
 
 
 C <- ggdraw(B) +
@@ -194,7 +194,7 @@ C <- ggdraw(B) +
     text = str_wrap("Las cifras oficiales no son claras", 17)
   )
 
-C
+#C
 
 
 D <- ggdraw(C) +
@@ -207,7 +207,7 @@ D <- ggdraw(C) +
     text = str_wrap("Datos: ONU y registros de datos de organizaciones locales. @programandoenR", 90)
   )
 
-D
+#D
 
 E <- ggdraw(D) +
   draw_text(
@@ -219,7 +219,7 @@ E <- ggdraw(D) +
     text = str_wrap("Datos: ONU y registros de datos de organizaciones locales. @programandoenR", 90)
   )
 
-E
+#E
 
 # PASO 3: Fusionar el gráfico con el logotipo
 grafico_final <- cowplot::ggdraw() +
