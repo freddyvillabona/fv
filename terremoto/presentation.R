@@ -27,26 +27,15 @@ C <- ggdraw(B) +
 C
 
 
-D <- ggdraw(C) +
+
+E <- ggdraw(C) +
   draw_text(
     x = 0.3, y = 0.02,
     size = 8,
     hjust = 0,
     colour = text_col,
     family = body_font,
-    text = str_wrap("Datos: ONU y registros de datos de organizaciones locales.", 90)
-  )
-
-D
-
-E <- ggdraw(D) +
-  draw_text(
-    x = 0.3, y = 0.02,
-    size = 8,
-    hjust = 0,
-    colour = text_col,
-    family = body_font,
-    text = str_wrap("Datos: ONU y registros de datos de organizaciones locales. @programandoenR", 90)
+    text = str_wrap("Datos: ONU y otras fuentes locales.", 80)
   )
 
 #E
@@ -54,6 +43,6 @@ E <- ggdraw(D) +
 # PASO 3: Fusionar el gráfico con el logotipo
 grafico_final <- cowplot::ggdraw() +
   cowplot::draw_plot(E) +
-  cowplot::draw_image(url_logo, x = 0.85, y = -0.04, width = 0.12, height = 0.12)
+  cowplot::draw_image(url_logo, x = 0.65, y = -0.04, width = 0.12, height = 0.12)
 
 grafico_final 
