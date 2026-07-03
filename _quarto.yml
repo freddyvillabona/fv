@@ -45,7 +45,7 @@ website:
 #      - icon: rss
 #        href: index.xml
     right: |
-      Acknowledgements to Liliana Capacho, Nicola Rennie, Hadley Wickham & Yan Holtz | FV-2026
+      Acknowledgements to Melissa Visconti, Liliana Capacho, Nicola Rennie, Hadley Wickham & Yan Holtz | FV-2026
 
 format:
   html-lumo:
