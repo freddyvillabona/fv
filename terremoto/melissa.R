@@ -45,6 +45,7 @@ cap <- c("")
 c1 <- glue("<span style='font-family:{title_font};font-size:8pt;'><br>**</span>")
 
 map <- read_sf('Municipios_Venezuela.shp')
+url_logo <- magick::image_read("a.png")
 
 dataNew <- map %>% 
   mutate(N = 1) %>% 
@@ -220,6 +221,11 @@ E <- ggdraw(D) +
 
 E
 
+# PASO 3: Fusionar el gráfico con el logotipo
+grafico_final <- cowplot::ggdraw() +
+  cowplot::draw_plot(E) +
+  cowplot::draw_image(url_logo, x = 0.85, y = -0.04, width = 0.12, height = 0.12)
 
+grafico_final 
 
 
