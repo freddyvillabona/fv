@@ -35,15 +35,7 @@ website:
   page-footer:
     left: |
       Built with Quarto
-#    center: 
-#      - icon: github
-#        href: https://github.com/willingc
-#      - icon: linkedin
-#        href: https://www.linkedin.com/in/carolwilling/
-#      - icon: twitter
-#        href: https://twitter.com/WillingCarol
-#      - icon: rss
-#        href: index.xml
+
     right: |
       Acknowledgements to Melissa De Sousa, Liliana Capacho, Nicola Rennie, Hadley Wickham & Yan Holtz | FV-2026
 
