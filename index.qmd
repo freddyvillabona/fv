@@ -45,4 +45,3 @@ about:
     - text: Bluesky
       href: https://bsky.app/profile/freddvillabona.bsky.social
 ---
-
