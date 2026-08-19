@@ -8,11 +8,23 @@ title: "Terremoto en Colombia"
 author: "FV"
 date: "2026-08-19"
 categories: [code, analysis]
-image: "tc.png"
+image: "tc.jpg"
 ---
 
 ::: callout-important
 ES
+
+🇨🇴 Ocurrió el 10 de agosto de 2026 a primeras horas de la mañana, registrando una fuerte magnitud de 7.4 Mw (7:34 a. m. hora local). Ha sido catalogado por el Servicio Geológico Colombiano como el sismo más potente que ha golpeado al país en lo que va del siglo XXI.\
+\
+Características principales\
+\
+Epicentro y origen: Se localizó en el municipio de San José del Palmar, Chocó. Fue provocado por un proceso tectónico de subducción en el Cinturón de Fuego del Pacífico.Profundidad:\
+\
+Ocurrió a unos 107-110 kilómetros de la superficie. Aunque fue un sismo profundo, liberó una enorme cantidad de energía que se sintió con fuerza en gran parte del país y en naciones vecinas.\
+\
+Zonas más afectadas: El impacto destructivo se concentró principalmente en el suroccidente y la región del «Eje Cafetero». Ciudades como Cali, Pereira y Manizales reportaron la mayor cantidad de afectados.\
+\
+Datos: SGC 19-08-2026
 :::
 
 ```{r}
@@ -41,5 +53,8 @@ showtext_auto()
 
 
 
-#p1
 ```
+
+![Colombia](tc.jpg)
+
+#p1
