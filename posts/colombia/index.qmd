@@ -1,5 +1,6 @@
 ---
 format: html
+engine: knitr
 execute:
   message: false
   warning: false
@@ -25,88 +26,13 @@ Zonas más afectadas: El impacto destructivo se concentró principalmente en el 
 Datos: SGC 19-08-2026
 :::
 
-```{r}
-{
-  library("rvest")
-  library('sf')
-  library("ggplot2")
-  library("tmap")
-  library("unikn")
-  library("dplyr")
-  library("showtext")
-  library("unikn")
-  library("tidyverse")
-  library("mapchina")
-  library("ggspatial")
-}
+```{undefined}
+#| eval: false
+#| message: true
+#| warning: true
+#| code-fold: true
+#| code-summary: Haz clic aquí para ver las 200 líneas de código
 
-font_add_google("Fira Sans","fira")
-showtext_auto()
-#map <- read_sf('shapes.shp')
-
-g <- filter(map, nombre_mpi %in% c("CUMARIBO",
-                                   "SOLANO",
-                                   "SAN JOSE DEL GUAVIARE",
-                                   "LA PRIMAVERA",
-                                   "PUERTO SANTANDER"))
-g <- g[-4,] 
-
-
-
-paleta <- c("red","blue")
-paleta <- unikn::usecol(paleta, n=5)
-
-
-paleta <- RColorBrewer::brewer.pal(9, "Blues")
-paleta
-paleta <- paleta[4:9]
-
-paleta2 <- head(rev(RColorBrewer::brewer.pal(9, "Blues")),5) 
-
-
-bubble_sizes <- c(1,1,1,1,1)
-punto <- "Municipios más extensos"
-
-
-ru <- map %>% 
-  st_as_sf()
-#ru$area
-pb <- data.frame(long = -76.23, lat = 4.97)
-
-A <- ggplot(data = ru) + 
-  ggtitle("Terremoto en Colombia") + 
-  xlab("Long") + ylab("Lat") + 
-  geom_sf(aes(fill = area), color = "white", size = 0.02, show.legend = TRUE) + 
-  theme(plot.title = element_text(size = 16), plot.subtitle = element_text(size = 20)) + 
-  annotation_scale() + 
-  annotate("segment", 
-           x = -80.0, y = 6.5,    
-           xend = -76.25, yend = 4.9,
-           color = "red", 
-           linewidth = 0.6,
-           arrow = arrow(length = unit(0.2, "cm"))) + 
-  annotate("text", 
-           x = -80.2, y = 6.5,
-           label = "Epicentro:\nSan José del Palmar", 
-           color = "black", 
-           fontface = "bold", 
-           size = 1, 
-           hjust = 1) +    
-  geom_point(data = pb, aes(x = long, y = lat), 
-             color = "red", size = 0.9, shape = 19) +
-  theme(text = element_text(family = "fira"), 
-        panel.grid = element_blank(), 
-        plot.title = element_text(size = 25, colour = "gray20", face = "bold"), 
-        axis.text.y = element_text(size = 14, colour = "gray20"), 
-        axis.title.x = element_text(size = 10, colour = "gray20"), 
-        axis.title.y = element_text(size = 10, colour = "gray20"), 
-        axis.text.x = element_text(size = 8, colour = "gray20"), 
-        panel.background = element_rect(fill = 'white', color = 'white'), 
-        legend.position = "none") 
-
-#A
 ```
 
 ![Colombia](tc.jpg)
-
-#p1
