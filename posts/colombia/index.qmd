@@ -1,0 +1,45 @@
+---
+format: html
+execute:
+  message: false
+  warning: false
+  fig-show: no
+title: "Terremoto en Colombia"
+author: "FV"
+date: "2026-08-19"
+categories: [code, analysis]
+image: "tc.png"
+---
+
+::: callout-important
+ES
+:::
+
+```{r}
+# LIBRARIES
+library(tidyverse)
+library(ggpubr)
+library(reshape2)
+library(ggcorrplot)
+library(ggcharts)
+library(tmaptools)
+library(prismatic)
+library(patchwork)
+library(gridExtra)
+library(showtext)
+library(camcorder)
+library(ggtext)
+
+
+# FONTS
+font_add_google("Luckiest Guy","ramp")
+font_add_google("Bebas Neue","beb")
+font_add_google("Fira Sans","fira")
+font_add_google("Raleway","ral")
+font_add_google("Bitter","bit")
+showtext_auto()
+
+
+
+#p1
+```

@@ -1,0 +1,17 @@
+{
+  "hash": "9b0ed49015178bb9b6a1e2b83f8c635e",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\nformat: html\nexecute:\n  message: false\n  warning: false\n  fig-show: no\ntitle: \"Terremoto en Colombia\"\nauthor: \"FV\"\ndate: \"2026-08-19\"\ncategories: [code, analysis]\nimage: \"tc.png\"\n---\n\n::: callout-important\nES\n:::\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# LIBRARIES\nlibrary(tidyverse)\nlibrary(ggpubr)\nlibrary(reshape2)\nlibrary(ggcorrplot)\nlibrary(ggcharts)\nlibrary(tmaptools)\nlibrary(prismatic)\nlibrary(patchwork)\nlibrary(gridExtra)\nlibrary(showtext)\nlibrary(camcorder)\nlibrary(ggtext)\n\n\n# FONTS\nfont_add_google(\"Luckiest Guy\",\"ramp\")\nfont_add_google(\"Bebas Neue\",\"beb\")\nfont_add_google(\"Fira Sans\",\"fira\")\nfont_add_google(\"Raleway\",\"ral\")\nfont_add_google(\"Bitter\",\"bit\")\nshowtext_auto()\n\n\n\n#p1\n```\n:::\n\n",
+    "supporting": [
+      "../../index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
