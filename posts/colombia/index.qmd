@@ -74,13 +74,10 @@ paleta2 <- head(rev(RColorBrewer::brewer.pal(9, "Blues")),5)
 bubble_sizes <- c(1,1,1,1,1)
 punto <- "Municipios más extensos"
 
-
-
 #GGPLOT2
 
 ru <- map %>% 
   st_as_sf()
-
 
 A <- ggplot(data = ru) + 
   ggtitle("Terremoto en Colombia") + 
@@ -101,10 +98,7 @@ A <- ggplot(data = ru) +
 
 A
 
-
 pb <- data.frame(long = -76.23, lat = 4.97)
-
-
 
 A <- ggplot(data = ru) + 
   ggtitle("Terremoto en Colombia") + 
@@ -141,8 +135,6 @@ A <- ggplot(data = ru) +
         legend.position = "none") 
 
 A
-
-
 ```
 
-![Colombia](tc.jpg)
+![](tc.jpg)
