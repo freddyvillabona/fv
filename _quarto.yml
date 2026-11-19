@@ -28,6 +28,7 @@ website:
 #      - ca.qmd
       - notes.qmd
       - book.qmd
+      - io.qmd
 
   
 #page-footer: "Built with Quarto - 2025"

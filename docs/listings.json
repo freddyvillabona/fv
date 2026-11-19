@@ -182,5 +182,13 @@
       "/book/roma/index.html",
       "/book/n1/index.html"
     ]
+  },
+  {
+    "listing": "/io.html",
+    "items": [
+      "/notas/profeta/index.html",
+      "/notas/roma/index.html",
+      "/notas/n1/index.html"
+    ]
   }
 ]
